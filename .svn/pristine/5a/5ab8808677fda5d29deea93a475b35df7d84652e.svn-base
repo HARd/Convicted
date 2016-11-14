@@ -1,0 +1,16 @@
+﻿using UnityEngine;
+using System;
+using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public class FirstStartScreen : ScreenBase 
+{
+	[SerializeField]
+	Text screenText;
+
+	public void Start()
+	{
+		screenText.text = Localization.Instance.GetLocale(780);
+	}
+}
