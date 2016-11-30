@@ -105,8 +105,7 @@ public static class SaveLoadXML
 
 	public static bool LoadXML() 
 	{
-		Debug.Log(Application.persistentDataPath);
-
+		
 		data = new DictionaryFile();
 		data.LoadFromFile(Path.Combine(DataStorage.Instance.GetPath(), convicted));
 

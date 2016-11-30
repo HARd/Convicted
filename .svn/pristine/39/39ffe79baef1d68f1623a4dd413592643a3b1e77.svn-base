@@ -1,0 +1,37 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+public class ContainerController : EventPanelBase 
+{
+	[SerializeField]
+	protected GameObject content;
+
+	[SerializeField]
+	protected ContainerController container;
+
+	public override void Draw(Transform  trans)
+	{
+		DestroyContent();
+		foreach(Transform transform in trans)
+		{
+			Action action = transform.GetComponent<Action>();
+			if(action != null)
+			{
+				GameObject item = Instantiate(actionPrefab, content.transform, false) as GameObject;
+				item.name = action.name;
+				EditorBaseItem eItem = item.GetComponent<EditorBaseItem>();
+				eItem.textName.text = action.text;
+				eItem.storyTransform = transform;
+				eItem.container = container;
+			}
+		}
+
+	}
+
+	public override void DestroyContent()
+	{
+		foreach(Transform transform in content.transform)
+			Destroy(transform.gameObject);
+	}
+}

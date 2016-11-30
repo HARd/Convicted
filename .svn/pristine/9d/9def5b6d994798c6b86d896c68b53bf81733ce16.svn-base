@@ -1,0 +1,37 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using ObjectsExtensionMethods;
+
+public class EditorStoryManager : StoryManager
+{
+	public GameObject content;
+	public GameObject itemPrefab;
+	public ContainerController container;
+
+	public override void CheckStory()
+	{
+		//List<Action> storyActionList = storyActions.GetChildrenComponents<Action>();
+		//List<Action> storyActionList = new List<Action>(storyActions.GetComponentsInChildren<Action>());
+//		foreach(Transform trans in storyActions.transform)
+//		{
+//			Action action = trans.GetComponent<Action>();
+//			print(action.name);
+//			GameObject item = Instantiate(itemPrefab, content.transform) as GameObject;
+//			item.name = action.name;
+//		}
+
+		foreach(Transform trans in storyActions.transform)
+		{
+//			Action action = trans.GetComponent<Action>();
+//			print(action.name);
+			GameObject item = Instantiate(itemPrefab, content.transform, false) as GameObject;
+			item.name = trans.name;
+			EditorBaseItem eItem = item.GetComponent<EditorBaseItem>();
+			eItem.textName.text = trans.name;
+			eItem.storyTransform = trans;
+			eItem.container = container;
+		}
+	}
+
+}

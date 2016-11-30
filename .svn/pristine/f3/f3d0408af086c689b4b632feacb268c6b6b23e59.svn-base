@@ -1,0 +1,130 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.UI;
+using ObjectsExtensionMethods;
+
+public class ContainerEventController : ContainerController
+{
+//	public GameObject lineAnchor;
+//	public GameObject linePrefab;
+	[SerializeField]
+	EventPanelController eventPanelController;
+
+	List<EventPanel> EventPanels = new List<EventPanel>();
+
+	public override void Draw(Transform  transform)
+	{
+		//print("--ContainerEventController.Draw() " + name);
+		EventPanel.Clear();
+		EventPanels.Clear();
+		
+		DestroyContent();
+
+		GetComponent<ScrollRect>().verticalScrollbar.value = 1f;
+		GetComponent<ScrollRect>().horizontalScrollbar.value = 1f;
+
+		DrawEventPanels(CreateEventPanel(transform));
+		//DrawLine();
+		Invoke("DrawLine", 0.1f);
+		DrawPreview();
+	}
+
+	public void DrawPreview()
+	{
+		if(EventPanels.Count > 0)
+		{
+			eventPanelController.gameObject.SetActive(true);
+			eventPanelController.descriptionText.text = Localization.Instance.GetLocale(EventPanels[0].generalEvent.description_id);
+			//eventPanelController.EventActionPanel.DrawActions(EventPanels[0].generalEvent.description_id
+			List<Action> actionList = EventPanels[0].generalEvent.GetChildrenComponents<Action>();
+			if(actionList.Count == 0) 
+			{
+				//int chance = Random.Range (0,100);
+				//this.BroadCastSinglMessage<Outcome>("ResolveOutcome", (outcom) => {outcom.ModifyChance(); return chance <= outcom.chance;});
+			}
+			else
+				eventPanelController.EventActionPanel.DrawActions(actionList, true);
+		}
+		else
+			eventPanelController.gameObject.SetActive(false);
+			
+	}
+
+	public void DrawLine()
+	{
+		foreach(EventPanel eventPanel in EventPanels)
+		{
+			eventPanel.DrawLine(EventPanels);
+		}
+	}
+
+	void Update()
+	{
+		//DrawLine();
+	}
+
+	public void DrawEventPanels(List<EventPanel> EventPanelList)
+	{
+		foreach(EventPanel eventPanel in EventPanelList)
+		{
+			foreach(EditorBaseItem eItem in eventPanel.GetChildrenComponents<EditorBaseItem>())
+			{
+				DrawEventPanels(CreateEventPanel(eItem.storyTransform));
+			}
+		}
+	}
+
+	public virtual List<EventPanel> CreateEventPanel(Transform  transform)
+	{
+		List<EventPanel> EventPanelList = new List<EventPanel>();
+		RandomEventController randomEvent = transform.GetComponent<RandomEventController>();
+		if(randomEvent != null)
+		{
+			for(uint i = 0; i < randomEvent.Count; i++)
+			{
+				GeneralEvent generalEvent = randomEvent.GetEvent(i);
+				if(!EventPanels.Exists(x => x.generalEvent == generalEvent))
+				{
+					EventPanel eventPanel = CreatePanel(generalEvent);
+					EventPanelList.Add(eventPanel);
+					eventPanel.Draw(generalEvent.transform);
+				}
+			}
+		}
+		else
+		{
+			ActionMGController actionMGController = transform.GetComponent<ActionMGController>();
+			if(actionMGController != null)
+			{
+				GeneralEvent generalEvent = actionMGController.MgComplite;
+				if(!EventPanels.Exists(x => x.generalEvent == generalEvent))
+				{
+					EventPanel eventPanel = CreatePanel(generalEvent);
+					EventPanelList.Add(eventPanel);
+					eventPanel.Draw(generalEvent.transform);
+				}
+
+				generalEvent = actionMGController.MgNotComplite;
+				if(!EventPanels.Exists(x => x.generalEvent == generalEvent))
+				{
+					EventPanel eventPanel = CreatePanel(generalEvent);
+					EventPanelList.Add(eventPanel);
+					eventPanel.Draw(generalEvent.transform);
+				}
+			}
+		}
+		EventPanels.AddRange(EventPanelList);
+		return EventPanelList;
+	}
+
+	public EventPanel CreatePanel(GeneralEvent generalEvent)
+	{
+		GameObject item = Instantiate(actionPrefab, content.transform, false) as GameObject;
+		//item
+		item.name = generalEvent.name;
+		EventPanel eventPanel = item.GetComponent<EventPanel>();
+		eventPanel.generalEvent = generalEvent;
+		return eventPanel;
+	}
+}

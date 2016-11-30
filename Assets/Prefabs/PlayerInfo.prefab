@@ -66,7 +66,6 @@ MonoBehaviour:
   day: 0
   tunnel: 0
   consealment: 0
-  charImageID: 0
   inventory:
   - name: soap
     text_id: 463
@@ -345,6 +344,29 @@ MonoBehaviour:
   - found_dragon_necke_one
   - call_harry_tunnel
   - call_harry_escape
+  - look_around_cell
+  - look_around_prison
+  - talk_coworker
+  - a_janitors_work
+  - heard_omnicin
+  - get_kitchen
+  - get_vinegar
+  - get_infirmary
+  - omnicin
+  - call_gregory
+  - get_contraband
+  - advertise_contraband
+  - talk_dan
+  - talk_holland
+  - shadow
+  - get_information
+  - hollands_task
+  - get_news
+  - get_instructions
+  - order_gun
+  - craft_better_weapon
+  - workshop_access
+  - fight_plan
   traitList:
   - name: strong
     text_id: 782
@@ -1103,6 +1125,66 @@ MonoBehaviour:
     event_chance: -999
     cooldown: 0
   - event_name: say_goodbye_carlos
+    global: 0
+    event_status: 0
+    event_chance: -999
+    cooldown: 0
+  - event_name: bribe_gato
+    global: 0
+    event_status: 0
+    event_chance: -999
+    cooldown: 0
+  - event_name: novak_revenge
+    global: 0
+    event_status: 0
+    event_chance: -999
+    cooldown: 0
+  - event_name: advertise_contraband
+    global: 0
+    event_status: 0
+    event_chance: -999
+    cooldown: 10
+  - event_name: give_omnicin
+    global: 0
+    event_status: 0
+    event_chance: -999
+    cooldown: 10
+  - event_name: tooth_brush
+    global: 0
+    event_status: 0
+    event_chance: -999
+    cooldown: 0
+  - event_name: check_stash
+    global: 0
+    event_status: 0
+    event_chance: -999
+    cooldown: 0
+  - event_name: advertise_contraband_on
+    global: 0
+    event_status: 0
+    event_chance: 100
+    cooldown: 0
+  - event_name: kill_dan
+    global: 0
+    event_status: 0
+    event_chance: 100
+    cooldown: 0
+  - event_name: personal_approach
+    global: 0
+    event_status: 0
+    event_chance: 100
+    cooldown: 0
+  - event_name: write_note
+    global: 0
+    event_status: 0
+    event_chance: 100
+    cooldown: 0
+  - event_name: protein_bar
+    global: 0
+    event_status: 0
+    event_chance: -999
+    cooldown: 0
+  - event_name: got_hit
     global: 0
     event_status: 0
     event_chance: -999
