@@ -64380,9 +64380,7 @@ MonoBehaviour:
   description_id: 2005
   description: 
   continuous: 0
-  itemMods:
-  - mod: 0
-    item: craft_better_weapon
+  itemMods: []
   statChange: []
   base_chance: 100
   chance: 0

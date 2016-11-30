@@ -6564,7 +6564,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012149221580}
   - 114: {fileID: 114000014050741476}
-  - 114: {fileID: 114000013856693486}
   m_Layer: 0
   m_Name: order_gun
   m_TagString: StoryAction
@@ -64380,9 +64379,7 @@ MonoBehaviour:
   description_id: 2005
   description: 
   continuous: 0
-  itemMods:
-  - mod: 0
-    item: craft_better_weapon
+  itemMods: []
   statChange: []
   base_chance: 100
   chance: 0
@@ -71899,19 +71896,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   randomEventList:
   - {fileID: 114000014091856162}
---- !u!114 &114000013856693486
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011331689506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47641aa874951c945b7bbcbf472c3fc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  randomEventList:
-  - {fileID: 114000012902992906}
 --- !u!114 &114000013858075488
 MonoBehaviour:
   m_ObjectHideFlags: 1

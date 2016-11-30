@@ -368,7 +368,6 @@ MonoBehaviour:
   - workshop_access
   - fight_plan
   - find_help
-  - lesson_from_dan
   traitList:
   - name: strong
     text_id: 782
