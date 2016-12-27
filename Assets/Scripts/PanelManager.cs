@@ -24,6 +24,13 @@ public class PanelManager : MonoBehaviour
 
 	public Text questLogCountText;
 
+	[SerializeField]
+	Image imageReturnButton;
+	[SerializeField]
+	Sprite spritArrow;
+	[SerializeField]
+	Sprite spritDoor;
+
 	//public GameObject smokeAnimation;
 
 	GameObject currentPanel;
@@ -31,6 +38,7 @@ public class PanelManager : MonoBehaviour
 
 	public void RefreshCurrentPanel()
 	{
+		imageReturnButton.sprite = spritArrow;
 		if (CharInfoPanel.gameObject.activeSelf)
 			currentPanel = CharInfoPanel.gameObject;
 		else if (QuestPanel.gameObject.activeSelf)
@@ -41,6 +49,7 @@ public class PanelManager : MonoBehaviour
 		{
 			currentPanel = null;
 			ActionPanel.gameObject.SetActive(true);
+			imageReturnButton.sprite = spritDoor;
 		}
 
 		if(EventManager.Instance.current_event.tag == "GeneralEvent")
@@ -49,8 +58,15 @@ public class PanelManager : MonoBehaviour
 
 	public void CloseButton()
 	{
-		currentPanel.SetActive(false);
-		RefreshCurrentPanel();
+		if(!IsActionPanel())
+		{
+			currentPanel.SetActive(false);
+			RefreshCurrentPanel();
+		}
+		else if(!EventPanel.gameObject.activeSelf)
+		{
+			GUIController.Instance.CreateExiteMainMenuDialog();
+		}
 	}
 
 	public void CallCharPanel()
@@ -80,12 +96,19 @@ public class PanelManager : MonoBehaviour
 			QuestPanel.gameObject.SetActive(true);
 			RefreshCurrentPanel();
 			PanelManager.Instance.QuestPanel.OpenQuestLog();
+			RefreshCurrentPanel ();
 		} 
 		else 
 		{
 			QuestPanel.gameObject.SetActive(false);
 			RefreshCurrentPanel();
 		}
+	}
+
+	public void CallEventPanel(bool value) 
+	{
+		EventPanel.gameObject.SetActive(value);
+		ReturnButton.gameObject.SetActive(!value);
 	}
 
 	void CloseAllPanel()
@@ -141,12 +164,22 @@ public class PanelManager : MonoBehaviour
 
 	void Update()
 	{
-		if(currentPanel == null) 
-			ReturnButton.gameObject.SetActive(false);
-		else 
-			ReturnButton.gameObject.SetActive(true);
+//		if(currentPanel == null) 
+//			ReturnButton.gameObject.SetActive(false);
+//		else 
+//			ReturnButton.gameObject.SetActive(true);
 
 		if(StoryManager.Instance != null)
 			questLogCountText.text = (QuestPanel.questLog.Count + StoryManager.Instance.activeStoreCounter).ToString();
+	}
+
+	public bool IsActionPanel()
+	{
+		return currentPanel == null;
+	}
+
+	public void Endgame()
+	{
+		PlayerInfo.Instance.CharacterComplete();
 	}
 }

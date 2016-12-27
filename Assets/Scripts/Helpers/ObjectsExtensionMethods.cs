@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -69,6 +70,12 @@ namespace ObjectsExtensionMethods
 		public static List<T> GetChildrenComponents<T>(this Transform mb, Predicate<T> p = null)
 		{
 			return mb.gameObject.GetChildrenComponents<T>(p);
+		}
+
+		public static Canvas GetParentCanvas(this Transform t)
+		{
+			Canvas canvas = t.GetComponent<Canvas>();
+			return (canvas == null) ? t.parent.GetParentCanvas() : canvas;
 		}
 	}
 }

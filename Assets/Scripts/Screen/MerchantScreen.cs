@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using ObjectsExtensionMethods;
 
 public class MerchantScreen : ScreenBase 
 {
@@ -45,25 +46,6 @@ public class MerchantScreen : ScreenBase
 		{
 			for(int i = 0; i < MerchantItem.Length; i++) 
 			{
-//				int x = 0;
-//				bool stop = false;
-//				while(!stop) 
-//				{
-//					x = Mathf.FloorToInt(Random.Range(0,PlayerInfo.Instance.inventory.Count-1));
-//					bool match = false;
-//					foreach(int item_check in ItemOfferList) 
-//					{
-//						if(PlayerInfo.Instance.inventory[item_check].name == PlayerInfo.Instance.inventory[x].name) 
-//						{
-//							match = true;
-//							break;
-//						}  
-//					}
-//					if(!match && PlayerInfo.Instance.inventory[x].cost > 0) 
-//						stop = true;
-//				}
-//				Item item = PlayerInfo.Instance.GetRandomItemIndex(it => it.cost > 0);
-
 				ItemOfferList.Add(GetRandomItemIndex());
 			}
 			SaveLoadXML.SetValue(item_key, ItemOfferList.ToArray());
@@ -96,6 +78,7 @@ public class MerchantScreen : ScreenBase
 		if(obj.ItemName != "no_cash") 
 		{
 			//print("--obj.ItemName  " + obj.ItemName);
+			CreateFindToolAnim(obj);
 			PlayerInfo.Instance.EquipItem(obj.ItemName,true,true);
 			ItemPurchased.Add(obj.ID);
 			SaveLoadXML.SetValue(item_purchased, ItemPurchased.ToArray());
@@ -115,4 +98,14 @@ public class MerchantScreen : ScreenBase
 		PanelManager.Instance.RefreshCurrentPanel();
 		Destroy(gameObject);
 	}
+
+	void CreateFindToolAnim(MerchantItemController obj) 
+	{
+		float timeMove = 0.4f;
+		Transform t =  obj.DuplicateItemImage().transform;
+		t.SetParent(transform.GetParentCanvas().transform, true);
+		t.ScaleTo(new Vector2(0.4f, 0.4f), timeMove);
+		t.MoveTo(0f, -650f, timeMove);
+		Destroy(t.gameObject, timeMove);
+	}	
 }

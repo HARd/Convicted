@@ -116,7 +116,7 @@ public class QuestPanelController : MonoBehaviour
 		Quest quest = questLog.Find(x => x.char_name == char_name );
 		if(quest != null)
 		{
-			PanelManager.Instance.EventPanel.gameObject.SetActive(true);
+			PanelManager.Instance.CallEventPanel(true);
 			WorldTime.Instance.pause = true;
 
 			foreach(string item in quest.removeQuestItems) 

@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_2;UNITY_5_4;UNITY_5;UNITY_ADS;UNITY_ANALYTICS;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_3;UNITY_5_4;UNITY_5;UNITY_ADS;UNITY_ANALYTICS;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -47,16 +47,44 @@
   <ItemGroup>
      <Compile Include="Assets\EditorScene\Script\ChangeEventPanel.cs" />
      <Compile Include="Assets\EditorScene\Script\ContainerController.cs" />
+     <Compile Include="Assets\EditorScene\Script\ContainerControllerBase.cs" />
      <Compile Include="Assets\EditorScene\Script\ContainerEventController.cs" />
+     <Compile Include="Assets\EditorScene\Script\CreateActionScreen.cs" />
+     <Compile Include="Assets\EditorScene\Script\CreateActionScreen\InputItemScreen.cs" />
+     <Compile Include="Assets\EditorScene\Script\CreateActionScreen\ItemsBox.cs" />
+     <Compile Include="Assets\EditorScene\Script\CreateActionScreen\ItemsBoxItem.cs" />
+     <Compile Include="Assets\EditorScene\Script\DropDownItems.cs" />
+     <Compile Include="Assets\EditorScene\Script\EditContainer.cs" />
      <Compile Include="Assets\EditorScene\Script\EditorAction.cs" />
      <Compile Include="Assets\EditorScene\Script\EditorActionPanelController.cs" />
      <Compile Include="Assets\EditorScene\Script\EditorBaseItem.cs" />
      <Compile Include="Assets\EditorScene\Script\EditorChangeItem.cs" />
      <Compile Include="Assets\EditorScene\Script\EditorEventActionController.cs" />
      <Compile Include="Assets\EditorScene\Script\EditorStoryManager.cs" />
+     <Compile Include="Assets\EditorScene\Script\EventMessager\EditorEventExecuter.cs" />
+     <Compile Include="Assets\EditorScene\Script\EventMessager\EditorEventManager.cs" />
+     <Compile Include="Assets\EditorScene\Script\EventMessager\EditorEventWatcher.cs" />
+     <Compile Include="Assets\EditorScene\Script\EventMessager\tmp\AbstractMessage.cs" />
+     <Compile Include="Assets\EditorScene\Script\EventMessager\tmp\AbstractMessageValued.cs" />
+     <Compile Include="Assets\EditorScene\Script\EventMessager\tmp\CallbackWrapper.cs" />
+     <Compile Include="Assets\EditorScene\Script\EventMessager\tmp\EventMessager.cs" />
      <Compile Include="Assets\EditorScene\Script\EventPanel.cs" />
-     <Compile Include="Assets\EditorScene\Script\EventPanelBase.cs" />
+     <Compile Include="Assets\EditorScene\Script\EventPanelLine.cs" />
      <Compile Include="Assets\EditorScene\Script\PrisonEditorLoader.cs" />
+     <Compile Include="Assets\EditorScene\Script\UnityEventsList.cs" />
+     <Compile Include="Assets\FacebookSDK\Examples\Scripts\ConsoleBase.cs" />
+     <Compile Include="Assets\FacebookSDK\Examples\Scripts\LogView.cs" />
+     <Compile Include="Assets\FacebookSDK\Examples\Scripts\MenuBase.cs" />
+     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AccessTokenMenu.cs" />
+     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AppEvents.cs" />
+     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AppInvites.cs" />
+     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AppLinks.cs" />
+     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AppRequests.cs" />
+     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\DialogShare.cs" />
+     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\GameGroups.cs" />
+     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\GraphRequest.cs" />
+     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\MainMenu.cs" />
+     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\Pay.cs" />
      <Compile Include="Assets\Libs\SortingLayer\SortingLayerAttribute.cs" />
      <Compile Include="Assets\Libs\SortingLayer\SortingLayerExposed.cs" />
      <Compile Include="Assets\Libs\VideoDecoder\VideoDecoder.cs" />
@@ -73,6 +101,7 @@
      <Compile Include="Assets\Scripts\Controllers\Action\ActionMGController.cs" />
      <Compile Include="Assets\Scripts\Controllers\Action\ActionPanel.cs" />
      <Compile Include="Assets\Scripts\Controllers\Action\ActionPanelController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\Action\AdvertisementEventController.cs" />
      <Compile Include="Assets\Scripts\Controllers\Action\BaseActionController.cs" />
      <Compile Include="Assets\Scripts\Controllers\Action\EventActionController.cs" />
      <Compile Include="Assets\Scripts\Controllers\Action\RandomEventController.cs" />
@@ -106,6 +135,7 @@
      <Compile Include="Assets\Scripts\DataStorage\SimpleKeyValueDataFile.cs" />
      <Compile Include="Assets\Scripts\EventManager.cs" />
      <Compile Include="Assets\Scripts\EventTriggers.cs" />
+     <Compile Include="Assets\Scripts\FBHolder.cs" />
      <Compile Include="Assets\Scripts\GUIController.cs" />
      <Compile Include="Assets\Scripts\GUIEffect.cs" />
      <Compile Include="Assets\Scripts\GameData.cs" />
@@ -120,6 +150,7 @@
      <Compile Include="Assets\Scripts\Helpers\Loaders\PrisonLoader.cs" />
      <Compile Include="Assets\Scripts\Helpers\ObjectsExtensionMethods.cs" />
      <Compile Include="Assets\Scripts\Helpers\OnClickDelegatController.cs" />
+     <Compile Include="Assets\Scripts\Helpers\OnClickTrigger.cs" />
      <Compile Include="Assets\Scripts\Helpers\SendMessageEventTranslator.cs" />
      <Compile Include="Assets\Scripts\Helpers\SimpleEffectorsExtensions.cs" />
      <Compile Include="Assets\Scripts\Helpers\SpriteManager.cs" />
@@ -142,14 +173,24 @@
      <Compile Include="Assets\Scripts\Log\DebugLog.cs" />
      <Compile Include="Assets\Scripts\Log\Logger.cs" />
      <Compile Include="Assets\Scripts\Log\RemoteLogger.cs" />
+     <Compile Include="Assets\Scripts\MG\AlphaTest.cs" />
+     <Compile Include="Assets\Scripts\MG\AlphaTestDrag.cs" />
+     <Compile Include="Assets\Scripts\MG\DragObject.cs" />
+     <Compile Include="Assets\Scripts\MG\DragObjectBase.cs" />
      <Compile Include="Assets\Scripts\MG\Lock_mg.cs" />
      <Compile Include="Assets\Scripts\MG\MgBase.cs" />
+     <Compile Include="Assets\Scripts\MG\Puzzle\Puzzle.cs" />
+     <Compile Include="Assets\Scripts\MG\Puzzle\PuzzleButtonDragTarget.cs" />
+     <Compile Include="Assets\Scripts\MG\Puzzle\PuzzleDragTarget.cs" />
+     <Compile Include="Assets\Scripts\MG\Puzzle\PuzzlePart.cs" />
+     <Compile Include="Assets\Scripts\MG\Puzzle\PuzzlePartRotator.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Outcome.cs" />
      <Compile Include="Assets\Scripts\PanelManager.cs" />
      <Compile Include="Assets\Scripts\Parameter\Parameter.cs" />
      <Compile Include="Assets\Scripts\Parameter\ad_cd.cs" />
      <Compile Include="Assets\Scripts\Parameter\advertisement_timer.cs" />
+     <Compile Include="Assets\Scripts\Parameter\advertisement_timer_rest.cs" />
      <Compile Include="Assets\Scripts\Parameter\body.cs" />
      <Compile Include="Assets\Scripts\Parameter\cash.cs" />
      <Compile Include="Assets\Scripts\Parameter\character.cs" />
@@ -182,6 +223,7 @@
      <Compile Include="Assets\Scripts\Screen\CharacterScreen.cs" />
      <Compile Include="Assets\Scripts\Screen\DailyBonusScreen.cs" />
      <Compile Include="Assets\Scripts\Screen\EndGameScreen.cs" />
+     <Compile Include="Assets\Scripts\Screen\FindToolScreen.cs" />
      <Compile Include="Assets\Scripts\Screen\FirstStartScreen.cs" />
      <Compile Include="Assets\Scripts\Screen\Hint.cs" />
      <Compile Include="Assets\Scripts\Screen\IllustrationScreen.cs" />
@@ -213,6 +255,7 @@
      <None Include="Assets\Libs\VideoDecoder\Shaders\YUVtoRGBA.shader" />
      <None Include="Assets\Images\Shaders\Unlit.shader" />
      <None Include="Assets\StreamingAssets\Text\Strings.txt" />
+     <None Include="Assets\FacebookSDK\link.xml" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\res\values\strings.xml" />
  <Reference Include="UnityEngine.Advertisements">
@@ -227,6 +270,22 @@
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
+ <Reference Include="Facebook.Unity">
+ <HintPath>/Users/tarnavskii/Documents/Convicted/Assets/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
+ </Reference>
+ <Reference Include="Facebook.Unity.Settings">
+ <HintPath>/Users/tarnavskii/Documents/Convicted/Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Cloud.Analytics">
+ <HintPath>/Users/tarnavskii/Documents/Convicted/Assets/Plugins/UnityEngine.Cloud.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Cloud.Analytics.Util">
+ <HintPath>/Users/tarnavskii/Documents/Convicted/Assets/Plugins/UnityEngine.Cloud.Analytics.Util.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{540A0422-CA94-A093-A98F-9F638F84FDA5}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

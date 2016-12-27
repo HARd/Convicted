@@ -1,9 +1,16 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections;
 
 public class Lock_mg : MgBase
 {
+	[SerializeField]
+	GameObject helpPanel;
+
+	[SerializeField]
+	Text helpText;
+
 	[SerializeField]
 	ActionCounter counter;
 
@@ -24,9 +31,17 @@ public class Lock_mg : MgBase
 	bool isRightClick = false;
 	int blocker = 0;
 
+	const string first_open_mg_lock = "FIRST_OPEN_MG_LOCK";
+
 	void Start() 
 	{
 		StartCoroutine(BlockCoroutine(2f));
+		if(!SaveLoadXML.HasKey(first_open_mg_lock))
+		{
+			SaveLoadXML.SetValue(first_open_mg_lock, "true");
+			StartCoroutine(StartHelpShow(2f));
+		}
+		helpText.text = Localization.Instance.GetLocale(2524);
 	}
 	
 	public override void OnPointerClick (PointerEventData eventData) //SendMessage handler
@@ -101,5 +116,21 @@ public class Lock_mg : MgBase
 		yield return new WaitForSeconds(delay);
 		if(--blocker == 0)
 			isDisabled = false;
+	}
+
+	IEnumerator StartHelpShow(float delay)
+	{
+		yield return new WaitForSeconds(delay);
+		HelpShow();
+	}
+
+	public void HelpHide()
+	{
+		helpPanel.SetActive(false);
+	}
+
+	public void HelpShow()
+	{
+		helpPanel.SetActive(true);
 	}
 }

@@ -49,7 +49,7 @@ public class GeneralEvent : MonoBehaviour
 	public bool Launch() 
 	{
 		//GeneralEvent eventData = this;
-		PanelManager.Instance.EventPanel.gameObject.SetActive(true);
+		PanelManager.Instance.CallEventPanel(true);
 		WorldTime.Instance.pause = true;
 		EventManager.Instance.current_event = gameObject;
 
@@ -71,7 +71,7 @@ public class GeneralEvent : MonoBehaviour
 			} 
 			else 
 			{
-				PanelManager.Instance.EventPanel.gameObject.SetActive(false);
+				PanelManager.Instance.CallEventPanel(false);
 				EventManager.Instance.current_event = EventManager.Instance.GeneralEventList[EventManager.Instance.current_event_id];
 				return false;
 			}

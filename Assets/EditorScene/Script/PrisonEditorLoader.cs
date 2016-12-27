@@ -22,7 +22,8 @@ public class PrisonEditorLoader : PrefabLoader
 	protected override void DoAction()
 	{
 		base.DoAction();
-		InstantiatedPrefab.GetComponent<StoryManager>().enabled = false;
+		//InstantiatedPrefab.GetComponent<StoryManager>().enabled = false;
+		Destroy(InstantiatedPrefab.GetComponent<StoryManager>());
 		InstantiatedPrefab.GetComponent<QuestManager>().enabled = false;
 		InstantiatedPrefab.GetComponent<EventManager>().enabled = false;
 		InstantiatedPrefab.GetComponent<WorldTime>().enabled = false;

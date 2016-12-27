@@ -7,7 +7,7 @@ public class charisma : Parameter
 	public override void Applay()
 	{
 		PlayerInfo.Instance.charisma += value;
-		Debug.Log("-- Applay() charisma - " + value);
+		//Debug.Log("-- Applay() charisma - " + value);
 	}
 
 	public override float GetModifier()

@@ -1,12 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PanelManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Action.cs">
     <Files>
-      <File FileName="Assets/Scripts/PanelManager.cs" Line="46" Column="1" />
-      <File FileName="Assets/Scripts/Story.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Outcome.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/EventManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/SaveLoadXML.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Parameter/advertisement_timer.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/LocalNotification/LocalNotification.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/WorldTime.cs" Line="46" Column="2" />
+      <File FileName="Assets/Scripts/QuestManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Controllers/Quest/QuestPanelController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PanelManager.cs" Line="181" Column="23" />
+      <File FileName="Assets/Scripts/Controllers/Crafting/RecipeController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EventManager.cs" Line="81" Column="3" />
+      <File FileName="Assets/Scripts/Action.cs" Line="142" Column="3" />
+      <File FileName="Assets/Scripts/Parameter/Parameter.cs" Line="50" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -77,7 +77,7 @@ public class Action : MonoBehaviour
 		StoryManager.Instance.CheckStory();
 		EventManager.Instance.LaunchGeneralEvent (true);
 		//EventManager.Instance.LaunchGeneralEvent (false);
-		PanelManager.Instance.EventPanel.gameObject.SetActive(false);
+		PanelManager.Instance.CallEventPanel(false);
 
 		// If the players health is lower or equal to 0 he is sent to the infirmary
 		if(PlayerInfo.Instance.health <= 0)
@@ -151,6 +151,11 @@ public class Action : MonoBehaviour
 		if(Advertisement.IsReady("rewardedVideo") && WorldTime.Instance.rewarded_advertisement_cd <= 0)
 			ShowRewardedAd();
 	}
+	void action_show_ad_rest()
+	{
+		if(Advertisement.IsReady("rewardedVideo"))
+			ShowRewardedAd();
+	}
 
 	public void ShowRewardedAd()
 	{
@@ -167,7 +172,8 @@ public class Action : MonoBehaviour
 		case ShowResult.Finished:
 			//Debug.Log("The ad was successfully shown.");
 			WorldTime.Instance.rewarded_advertisement_cd = 5;
-			GeneralEvent generalEvent = EventManager.Instance.GetAdvertisementEvent();
+			//GeneralEvent generalEvent = EventManager.Instance.GetAdvertisementEvent();
+			GeneralEvent generalEvent = GetComponent<AdvertisementEventController>().GetEvent();
 			if(generalEvent != null)
 				generalEvent.Launch();
 			break;

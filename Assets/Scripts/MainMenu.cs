@@ -27,6 +27,8 @@ public class MainMenu : MonoBehaviour
 	[SerializeField]
 	CharSelectPanelController CharacterSelectionPanel;
 
+	//const string newGamePanelOpened = "NEW_GAME_PANEL_OPENED";
+
 	void Start()
 	{
 
@@ -46,16 +48,19 @@ public class MainMenu : MonoBehaviour
 			ScreenManager.Instance.CreateScreen("FirstStartPanel");
 		}
 
+		if(!GameData.current.isFirstOpened)
+			NewGame();
 	}
 
 	public void NewGame()
 	{
+		GameData.current.isFirstOpened = false;
 		StartGamePanel.SetActive(false);
 		newGamePanel.gameObject.SetActive(true);
 		newGamePanel.NewGame();
 
-		if(!GameData.current.HasCharacterCompleted(0) && !GameData.current.isTutorialCompleted)
-			ScreenManager.Instance.CreateScreen("TutorialMainMenu");
+//		if(!GameData.current.HasCharacterCompleted(0) && !GameData.current.isTutorialCompleted)
+//			ScreenManager.Instance.CreateScreen("TutorialMainMenu");
 	}
 		
 	public void CharacterGeneration(int id,bool reset_character)

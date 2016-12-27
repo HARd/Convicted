@@ -26,7 +26,9 @@ public class Trait
 //			if(param != null)
 //				StatBonusList[i] = param;
 //		}
-		foreach(Parameter param in StatBonusList)
-			param.Applay();
+
+			
+			
+		
 	}
 }

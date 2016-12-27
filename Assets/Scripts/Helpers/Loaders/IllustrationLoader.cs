@@ -8,12 +8,17 @@ public class IllustrationLoader : PrefabLoader
 	string resourceSpritePath;
 
 	[SerializeField]
+	string url;
+
+	[SerializeField]
 	bool nativeSize = false;
 
 	protected override void DoAction()
 	{
 		base.DoAction();
-		Image image = InstantiatedPrefab.GetComponent<IllustrationScreen>().bg.GetComponent<Image>();
+		IllustrationScreen screen = InstantiatedPrefab.GetComponent<IllustrationScreen>();
+		screen.url = url;
+		Image image = screen.bg.GetComponent<Image>();
 		image.sprite = Resources.Load<Sprite>(resourceSpritePath);
 		InstantiatedPrefab.transform.SetParent(ScreenManager.Instance.transform, worldPositionStays);
 

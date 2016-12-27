@@ -60,7 +60,9 @@ public class DailyBonusScreen : ScreenBase
 		System.DateTime next_date = new System.DateTime(next_day.Year, next_day.Month, next_day.Day, 0, 1, 0);
 		GameData.current.nextDailyBonusTime = next_date;
 		//System.DateTime next_date = new System.DateTime(next_day.Year, next_day.Month, next_day.Day, Random.Range(10, 20), 0, 0);
-		System.TimeSpan diff = next_date.AddHours(UnityEngine.Random.Range(10, 20)).Subtract(current_date);
+		next_date = next_date.AddHours(UnityEngine.Random.Range(9, 21));
+		//print(next_date);
+		System.TimeSpan diff = next_date.Subtract(current_date);
 		//print(diff);
 		//GameData.current.nextDailyBonusTime = System.DateTime.Now.AddHours(24);
 		//GameData.current.nextDailyBonusTime = System.DateTime.Now.AddMinutes(1);

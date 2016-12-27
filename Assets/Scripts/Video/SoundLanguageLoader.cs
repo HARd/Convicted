@@ -20,6 +20,9 @@ public class SoundLanguageLoader : MonoBehaviour
 			case "Russian":
 				GameData.current.lang = "ru";
 				break;
+			case "Ukrainian":
+				GameData.current.lang = "ru";
+				break;
 			default:
 				GameData.current.lang = "en";
 				break;

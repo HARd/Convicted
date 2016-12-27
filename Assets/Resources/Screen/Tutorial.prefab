@@ -37,7 +37,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011747812114}
   m_Layer: 0
-  m_Name: FocusTarget10
+  m_Name: FocusTarget11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -261,6 +261,38 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000012387978350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 224000013782563694}
+  - 222: {fileID: 222000013278469564}
+  - 114: {fileID: 114000011805081448}
+  m_Layer: 5
+  m_Name: TutorialCharacter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!1 &1000012413337444
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010079015068}
+  m_Layer: 0
+  m_Name: FocusTarget10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000012446740384
 GameObject:
   m_ObjectHideFlags: 1
@@ -287,6 +319,22 @@ GameObject:
   m_Layer: 0
   m_Name: FocusTarget4
   m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000012474606530
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011606718828}
+  - 114: {fileID: 114000011044605502}
+  m_Layer: 0
+  m_Name: look_around
+  m_TagString: StoryAction
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -431,7 +479,7 @@ GameObject:
   - 222: {fileID: 222000010435855732}
   - 114: {fileID: 114000011941797442}
   m_Layer: 5
-  m_Name: TutorialCharacter
+  m_Name: TutorialCharacter2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -599,6 +647,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &4000010079015068
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012413337444}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -188, y: -327, z: -0}
+  m_LocalScale: {x: 6, y: 2, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 224000010409614548}
+  m_RootOrder: 10
 --- !u!4 &4000010353839892
 Transform:
   m_ObjectHideFlags: 1
@@ -692,6 +753,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 224000013444303898}
   m_RootOrder: 5
+--- !u!4 &4000011606718828
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012474606530}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 224000013444303898}
+  m_RootOrder: 7
 --- !u!4 &4000011747812114
 Transform:
   m_ObjectHideFlags: 1
@@ -699,12 +773,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010087754898}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -188, y: -327, z: -0}
+  m_LocalPosition: {x: -188, y: -383, z: -0}
   m_LocalScale: {x: 6, y: 2, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 224000010409614548}
-  m_RootOrder: 10
+  m_RootOrder: 11
 --- !u!4 &4000011754430110
 Transform:
   m_ObjectHideFlags: 1
@@ -726,7 +800,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012469642260}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -298, y: 207, z: 0}
+  m_LocalPosition: {x: -281, y: 207, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -845,7 +919,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011901977218}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -121, y: 270, z: 0}
+  m_LocalPosition: {x: -203, y: 270, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -858,7 +932,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010242434896}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -163, y: 207, z: 0}
+  m_LocalPosition: {x: -142, y: 207, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -910,7 +984,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010341283330}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -195, y: 63, z: 0}
+  m_LocalPosition: {x: -176, y: 63, z: 0}
   m_LocalScale: {x: 6, y: 2, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1041,6 +1115,31 @@ MonoBehaviour:
   - stat: trait
     event_name: lucky
     value: 1
+--- !u!114 &114000011044605502
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012474606530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdba3189e476dd245841b7f400759284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_id: 1000
+  text: "\u041E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C\u0441\u044F \u0432
+    \u043A\u0430\u043C\u0435\u0440\u0435"
+  type: timed
+  color: 0
+  time_boost: 0
+  unlockDay: 0
+  requireItem: []
+  requireStat: []
+  requireStory: starter
+  statChange: []
+  base_chance: 100
+  chance: 100
+  modifierList: []
 --- !u!114 &114000011154483610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1134,6 +1233,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   focus: {fileID: 224000013773096074}
   timeFocused: 0.2
+--- !u!114 &114000011805081448
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012387978350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 63173c3bad1f1c54a92ac429d0f2e389, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!114 &114000011929775062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1157,9 +1283,9 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: d747fa9759383314192bc924c6b75104, type: 3}
     m_FontSize: 28
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 2
-    m_MaxSize: 40
+    m_MaxSize: 36
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1180,13 +1306,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 63173c3bad1f1c54a92ac429d0f2e389, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aea18ac7625710d44b9b9e7e6c6d7f0d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1233,7 +1359,6 @@ MonoBehaviour:
   time_boost: 180
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 0
@@ -1264,7 +1389,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -1283,7 +1407,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyOnClick: 0
-  TutorialCharacter: {fileID: 114000011941797442}
+  TutorialCharacter: {fileID: 114000011805081448}
+  TutorialCharacter2: {fileID: 114000011941797442}
   TutorialTextPanel: {fileID: 1000010797603810}
   TutorialDescriptionMessage: {fileID: 114000011929775062}
   TutorialTapMessage: {fileID: 114000011154483610}
@@ -1293,6 +1418,7 @@ MonoBehaviour:
   tutorialStepList:
   - name: greeting
     hasCharacter: 1
+    hasCharacter2: 0
     hasPointer: 0
     textPos: 0
     pointerPosition: {x: 0, y: 0}
@@ -1306,6 +1432,7 @@ MonoBehaviour:
     targetFocus: {fileID: 0}
   - name: stats
     hasCharacter: 1
+    hasCharacter2: 0
     hasPointer: 1
     textPos: 0
     pointerPosition: {x: 0, y: -35}
@@ -1319,6 +1446,7 @@ MonoBehaviour:
     targetFocus: {fileID: 4000010577181998}
   - name: actions
     hasCharacter: 1
+    hasCharacter2: 0
     hasPointer: 1
     textPos: 0
     pointerPosition: {x: 70, y: 0}
@@ -1332,6 +1460,7 @@ MonoBehaviour:
     targetFocus: {fileID: 4000012577452148}
   - name: actions2
     hasCharacter: 1
+    hasCharacter2: 0
     hasPointer: 1
     textPos: 0
     pointerPosition: {x: 70, y: 0}
@@ -1345,6 +1474,7 @@ MonoBehaviour:
     targetFocus: {fileID: 4000014233379470}
   - name: energy
     hasCharacter: 1
+    hasCharacter2: 0
     hasPointer: 1
     textPos: 0
     pointerPosition: {x: 0, y: -20}
@@ -1358,6 +1488,7 @@ MonoBehaviour:
     targetFocus: {fileID: 4000011959691548}
   - name: health
     hasCharacter: 1
+    hasCharacter2: 0
     hasPointer: 1
     textPos: 0
     pointerPosition: {x: 0, y: -20}
@@ -1371,6 +1502,7 @@ MonoBehaviour:
     targetFocus: {fileID: 4000013916238752}
   - name: health_regain
     hasCharacter: 1
+    hasCharacter2: 0
     hasPointer: 1
     textPos: 0
     pointerPosition: {x: 70, y: 0}
@@ -1384,6 +1516,7 @@ MonoBehaviour:
     targetFocus: {fileID: 4000013446552816}
   - name: health_timed
     hasCharacter: 1
+    hasCharacter2: 0
     hasPointer: 0
     textPos: 0
     pointerPosition: {x: 0, y: 0}
@@ -1397,6 +1530,7 @@ MonoBehaviour:
     targetFocus: {fileID: 4000014148181834}
   - name: do_quest
     hasCharacter: 1
+    hasCharacter2: 0
     hasPointer: 0
     textPos: 0
     pointerPosition: {x: 0, y: 0}
@@ -1410,6 +1544,7 @@ MonoBehaviour:
     targetFocus: {fileID: 4000010486564070}
   - name: open_quest_log
     hasCharacter: 0
+    hasCharacter2: 0
     hasPointer: 1
     textPos: 1
     pointerPosition: {x: 0, y: 40}
@@ -1423,6 +1558,7 @@ MonoBehaviour:
     targetFocus: {fileID: 4000010486564070}
   - name: show_quest_hint
     hasCharacter: 1
+    hasCharacter2: 0
     hasPointer: 1
     textPos: 0
     pointerPosition: {x: 40, y: 0}
@@ -1436,6 +1572,7 @@ MonoBehaviour:
     targetFocus: {fileID: 4000013712610156}
   - name: close_quest_log
     hasCharacter: 0
+    hasCharacter2: 0
     hasPointer: 0
     textPos: 2
     pointerPosition: {x: 65, y: -440}
@@ -1449,6 +1586,7 @@ MonoBehaviour:
     targetFocus: {fileID: 0}
   - name: rest_action
     hasCharacter: 1
+    hasCharacter2: 0
     hasPointer: 1
     textPos: 0
     pointerPosition: {x: 70, y: 0}
@@ -1462,9 +1600,10 @@ MonoBehaviour:
     targetFocus: {fileID: 4000014233379470}
   - name: steal_soap_action
     hasCharacter: 0
+    hasCharacter2: 0
     hasPointer: 1
     textPos: 2
-    pointerPosition: {x: 340, y: -110}
+    pointerPosition: {x: 340, y: -244}
     pointerRot: 3
     descriprion_id: 0
     tap_id: 0
@@ -1475,9 +1614,10 @@ MonoBehaviour:
     targetFocus: {fileID: 0}
   - name: continue_action
     hasCharacter: 0
+    hasCharacter2: 0
     hasPointer: 1
     textPos: 2
-    pointerPosition: {x: 340, y: -110}
+    pointerPosition: {x: 340, y: -244}
     pointerRot: 3
     descriprion_id: 0
     tap_id: 0
@@ -1486,21 +1626,37 @@ MonoBehaviour:
     time: 0
     hasFocus: 0
     targetFocus: {fileID: 0}
-  - name: finish_quest_timed
+  - name: found_tool
     hasCharacter: 0
+    hasCharacter2: 0
     hasPointer: 0
     textPos: 2
-    pointerPosition: {x: 340, y: -330}
+    pointerPosition: {x: 0, y: 0}
+    pointerRot: 3
+    descriprion_id: 0
+    tap_id: 0
+    panel: 7
+    target: {fileID: 0}
+    time: 0.2
+    hasFocus: 0
+    targetFocus: {fileID: 0}
+  - name: finish_quest_action_timed
+    hasCharacter: 0
+    hasCharacter2: 0
+    hasPointer: 0
+    textPos: 2
+    pointerPosition: {x: 0, y: 0}
     pointerRot: 3
     descriprion_id: 0
     tap_id: 0
     panel: 6
     target: {fileID: 0}
-    time: 0
+    time: 0.2
     hasFocus: 1
-    targetFocus: {fileID: 4000011747812114}
+    targetFocus: {fileID: 4000010079015068}
   - name: finish_quest_action
     hasCharacter: 0
+    hasCharacter2: 0
     hasPointer: 1
     textPos: 2
     pointerPosition: {x: 70, y: 0}
@@ -1511,9 +1667,10 @@ MonoBehaviour:
     target: {fileID: 1000013069038334}
     time: 0.2
     hasFocus: 1
-    targetFocus: {fileID: 4000011747812114}
-  - name: finish
+    targetFocus: {fileID: 4000010079015068}
+  - name: finish_chif
     hasCharacter: 1
+    hasCharacter2: 0
     hasPointer: 0
     textPos: 0
     pointerPosition: {x: 70, y: 0}
@@ -1525,6 +1682,62 @@ MonoBehaviour:
     time: 0
     hasFocus: 1
     targetFocus: {fileID: 0}
+  - name: lost_tool
+    hasCharacter: 0
+    hasCharacter2: 0
+    hasPointer: 0
+    textPos: 2
+    pointerPosition: {x: 70, y: 0}
+    pointerRot: 3
+    descriprion_id: 0
+    tap_id: 0
+    panel: 7
+    target: {fileID: 0}
+    time: 0
+    hasFocus: 0
+    targetFocus: {fileID: 0}
+  - name: start_boyd1
+    hasCharacter: 0
+    hasCharacter2: 1
+    hasPointer: 0
+    textPos: 3
+    pointerPosition: {x: 0, y: 0}
+    pointerRot: 3
+    descriprion_id: 2516
+    tap_id: 982
+    panel: 0
+    target: {fileID: 0}
+    time: 0
+    hasFocus: 1
+    targetFocus: {fileID: 0}
+  - name: start_boyd2
+    hasCharacter: 0
+    hasCharacter2: 1
+    hasPointer: 0
+    textPos: 3
+    pointerPosition: {x: 0, y: 0}
+    pointerRot: 3
+    descriprion_id: 2517
+    tap_id: 982
+    panel: 0
+    target: {fileID: 0}
+    time: 0
+    hasFocus: 1
+    targetFocus: {fileID: 0}
+  - name: finish_story
+    hasCharacter: 0
+    hasCharacter2: 1
+    hasPointer: 1
+    textPos: 3
+    pointerPosition: {x: 50, y: 0}
+    pointerRot: 3
+    descriprion_id: 2518
+    tap_id: 2519
+    panel: 8
+    target: {fileID: 1000012474606530}
+    time: 0
+    hasFocus: 1
+    targetFocus: {fileID: 4000011747812114}
   currentTutorialStep: 0
 --- !u!114 &114000012598579496
 MonoBehaviour:
@@ -1599,7 +1812,6 @@ MonoBehaviour:
   time_boost: 360
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -1662,7 +1874,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - canteen_access
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 20
@@ -1725,7 +1936,6 @@ MonoBehaviour:
   time_boost: 90
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 10
@@ -1758,7 +1968,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -1785,7 +1994,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - old_jim_quest
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -1812,7 +2020,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - chief_quest
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -1867,6 +2074,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014159365030}
+--- !u!222 &222000013278469564
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012387978350}
 --- !u!224 &224000010001857950
 RectTransform:
   m_ObjectHideFlags: 1
@@ -1900,11 +2113,11 @@ RectTransform:
   - {fileID: 224000012663463484}
   - {fileID: 224000013472600008}
   m_Father: {fileID: 224000011376604368}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 121, y: -471}
-  m_SizeDelta: {x: 556, y: 316}
+  m_AnchoredPosition: {x: 96, y: -440}
+  m_SizeDelta: {x: 556, y: 386}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000010409614548
 RectTransform:
@@ -1927,6 +2140,7 @@ RectTransform:
   - {fileID: 4000013446552816}
   - {fileID: 4000013712610156}
   - {fileID: 4000013134270652}
+  - {fileID: 4000010079015068}
   - {fileID: 4000011747812114}
   m_Father: {fileID: 224000011376604368}
   m_RootOrder: 1
@@ -1949,6 +2163,7 @@ RectTransform:
   - {fileID: 224000011843094946}
   - {fileID: 224000010409614548}
   - {fileID: 224000010001857950}
+  - {fileID: 224000013782563694}
   - {fileID: 224000012739170406}
   - {fileID: 224000010096796820}
   - {fileID: 224000014203272016}
@@ -1992,7 +2207,7 @@ RectTransform:
   m_Children:
   - {fileID: 4000012951675776}
   m_Father: {fileID: 224000013444303898}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -2010,7 +2225,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 224000011376604368}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -2031,8 +2246,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32.5, y: 40}
-  m_SizeDelta: {x: 470, y: 190}
+  m_AnchoredPosition: {x: 29, y: 30}
+  m_SizeDelta: {x: 440, y: 317}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000012739170406
 RectTransform:
@@ -2042,15 +2257,15 @@ RectTransform:
   m_GameObject: {fileID: 1000013382379054}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalScale: {x: -1.5, y: 1.5, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 224000011376604368}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -210, y: -445}
-  m_SizeDelta: {x: 420, y: 480}
+  m_AnchoredPosition: {x: 239, y: -204}
+  m_SizeDelta: {x: 224, y: 640}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000013444303898
 RectTransform:
@@ -2070,9 +2285,10 @@ RectTransform:
   - {fileID: 4000011092595640}
   - {fileID: 4000011210793024}
   - {fileID: 4000012913809082}
+  - {fileID: 4000011606718828}
   - {fileID: 224000011932437114}
   m_Father: {fileID: 224000011376604368}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -2093,7 +2309,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32.5, y: -100}
+  m_AnchoredPosition: {x: 32.5, y: -150}
   m_SizeDelta: {x: 500, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000013773096074
@@ -2114,6 +2330,24 @@ RectTransform:
   m_AnchoredPosition: {x: 2000, y: 0}
   m_SizeDelta: {x: 1280, y: 1280}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224000013782563694
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012387978350}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 224000011376604368}
+  m_RootOrder: 3
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -210, y: -445}
+  m_SizeDelta: {x: 420, y: 480}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000014203272016
 RectTransform:
   m_ObjectHideFlags: 1
@@ -2126,7 +2360,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 224000011376604368}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 109.999985, y: 509.99994}

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+//using System.IO;
 
 public class CharSelectPanelController : MonoBehaviour
 {
@@ -121,11 +122,11 @@ public class CharSelectPanelController : MonoBehaviour
 		}
 		else 
 		{
+			//print(3);
 			StartGameButton.SetActive (false);
 			RestartGameButton.SetActive (false);
 
 			CharacterGenerator.GenerateCharacter(id);
-
 		} 
 
 
@@ -151,7 +152,7 @@ public class CharSelectPanelController : MonoBehaviour
 		StoryLabel.text = Localization.Instance.GetLocale(MainMenu.Instance.charactersList [id].story_name_id); //882
 		//StoryLabelText.text = "<color=#147832>" + Localization.Instance.GetLocale(957) + "</color>" + ":";
 		StoryText.text = Localization.Instance.GetLocale(MainMenu.Instance.charactersList [id].story_id); //883
-		SentenceText.text = Localization.Instance.GetLocale(MainMenu.Instance.charactersList [id].sentence_id);
+		SentenceText.text = Localization.Instance.GetLocale(883) + " " + MainMenu.Instance.charactersList [id].sentence + " " + Localization.Instance.GetLocale(884) + ".";
 
 
 		TraitsText.text = Localization.Instance.GetLocale(56) + ":\n"; // "<color=blue>" + "</color>" + 
@@ -209,15 +210,19 @@ public class CharSelectPanelController : MonoBehaviour
 	public void StartGame()
 	{
 		AudioManager.Instance.Play(1);
+
+		//if(!File.Exists("Assets/Resources/Story/Story/character" + character_id + ".prefab"))
+		if(!MainMenu.Instance.charactersList[character_id].available)
+		{
+			ScreenManager.Instance.CreateScreen("HintPanel");
+			ScreenManager.Instance.current.GetComponent<Hint>().ShowHint(Localization.Instance.GetLocale(768));
+			return;
+		}
+
 		if (overwritingAlert || (GameData.current.HasCharacterCompleted(character_id) && character_id != GameData.current.currentCharacterID && SaveLoadXML.HasKey("PLAYER_INFO")))
 		{
 			ShowAlert(0);
 		} 
-//		else if(PlayerInfo.Instance.charImageID == 1)
-//		{
-//			ScreenManager.Instance.CreateScreen("HintPanel");
-//			ScreenManager.Instance.current.GetComponent<Hint>().ShowHint(Localization.Instance.GetLocale(768));
-//		}
 		else 
 			LoadScene(2);
 	}

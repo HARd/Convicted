@@ -91,6 +91,7 @@ GameObject:
   - 114: {fileID: 114000013717985668}
   - 114: {fileID: 114000012849024190}
   - 114: {fileID: 114000011021040756}
+  - 114: {fileID: 114000012454966276}
   m_Layer: 5
   m_Name: Action
   m_TagString: Untagged
@@ -111,11 +112,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textName: {fileID: 114000013911581326}
   storyTransform: {fileID: 0}
-  container: {fileID: 0}
+  selectColor: {r: 1, g: 1, b: 0, a: 1}
+  enterColor: {r: 0.9019608, g: 0.8745098, b: 0.78431374, a: 0.9882353}
   arrow_out: {fileID: 114000014051909210}
   line_out: {fileID: 224000013733226414}
   line_event: {fileID: 224000010746566846}
   level_line: 0
+  dragObjectPrefab: {fileID: 1000013072597668, guid: db9935bdf0ea2b844a602aa9b0f62ec9,
+    type: 2}
+--- !u!114 &114000012454966276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013072597668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e03effe306d8819419afd285743a25ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: OnClickEveneAction
+  executeOnClick: 1
+  executeOnFocusIn: 0
+  executeOnFocusOut: 0
 --- !u!114 &114000012539066340
 MonoBehaviour:
   m_ObjectHideFlags: 1

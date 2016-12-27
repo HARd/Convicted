@@ -28,19 +28,20 @@ public class ToolHolder : MonoBehaviour
 	public void Remove()
 	{
 		IsRemoving = true;
-		Destroy(gameObject);
-		Inventory.Instance.SaveToolList();
+		//Destroy(gameObject);
+		DestroyImmediate(gameObject);
+		//Inventory.Instance.SaveToolList();
 	}
 
 	public void AddCounter()
 	{
 		toolCounter.Add();
-		Inventory.Instance.SaveToolList();
+		//Inventory.Instance.SaveToolList();
 	}
 
 	public void LessCounter()
 	{
 		toolCounter.Less();
-		Inventory.Instance.SaveToolList();
+		//Inventory.Instance.SaveToolList();
 	}
 }

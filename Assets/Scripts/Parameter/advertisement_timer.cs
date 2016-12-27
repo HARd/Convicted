@@ -7,6 +7,7 @@ public class advertisement_timer : Parameter
 
 	public override float GetModifier()
 	{
+		Debug.Log("-- advertisement_timer" + Advertisement.IsReady("rewardedVideo") + "  " + WorldTime.Instance.rewarded_advertisement_cd);
 		if(Advertisement.IsReady("rewardedVideo") && WorldTime.Instance.rewarded_advertisement_cd <= 0) 
 			return 100;
 		else 

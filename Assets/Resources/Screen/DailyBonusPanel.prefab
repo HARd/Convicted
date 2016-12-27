@@ -355,7 +355,7 @@ MonoBehaviour:
   title: Title
   localizationTitle: 892
   message: Long message text
-  localizationMessage: 893
+  localizationMessage: 7d030000b6090000b7090000b8090000b9090000ba090000bb090000bc090000bd090000be090000bf090000
   bgColor:
     serializedVersion: 2
     rgba: 0
@@ -404,7 +404,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 5b640429c51e6cd49a3be3bde83881a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6fc2bc2ab7b979340a2b308b80488f1a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -731,7 +731,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 180, y: -30}
-  m_SizeDelta: {x: 31.304348, y: 29.565218}
+  m_SizeDelta: {x: 32, y: 31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000011108499038
 RectTransform:
@@ -767,8 +767,8 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -355}
-  m_SizeDelta: {x: 286.5, y: 75.5}
+  m_AnchoredPosition: {x: 0, y: -351}
+  m_SizeDelta: {x: 280, y: 72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000011326625760
 RectTransform:
@@ -790,7 +790,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 616, y: 750}
+  m_SizeDelta: {x: 608, y: 804}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000013006853520
 RectTransform:
@@ -827,7 +827,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 218.15218, y: -30}
+  m_AnchoredPosition: {x: 218.5, y: -30}
   m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000013526792852
@@ -848,7 +848,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -20}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000013904934346
 RectTransform:

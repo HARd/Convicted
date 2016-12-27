@@ -83,7 +83,7 @@ public class RecipeController : MonoBehaviour
 //			output_item = PlayerInfo.Instance.weaponList[recipe.output_id].name;
 
 		foreach(string ingridient in recipe.ingridients)
-			PlayerInfo.Instance.EquipItem(ingridient,false,false);
+			PlayerInfo.Instance.EquipItem(ingridient,false,false, true);
 
 		//if(recipe.type == "item") 
 			PlayerInfo.Instance.EquipItem(output_item,true,false);

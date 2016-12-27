@@ -13,6 +13,7 @@ public class GameData : ISerializeXML
 	public bool mute = false;
 	public DateTime nextDailyBonusTime;
 	public bool isTutorialCompleted = false;
+	public bool isFirstOpened = true;
 
 	List<int> charCompleted = new List<int>();
 
@@ -36,7 +37,8 @@ public class GameData : ISerializeXML
 
 	public void AddCharacterCompleted(int id)
 	{
-		charCompleted.Add(id);
+		if(!charCompleted.Exists(x => x == id))
+			charCompleted.Add(id);
 	}
 
 	public void AddAllCharactersCompleted(int[] ids)

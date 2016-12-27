@@ -10,6 +10,8 @@ public class TutorialScreen : ScreenBase
 	[SerializeField]
 	Image TutorialCharacter;
 	[SerializeField]
+	Image TutorialCharacter2;
+	[SerializeField]
 	GameObject TutorialTextPanel;
 	[SerializeField]
 	Text TutorialDescriptionMessage;
@@ -46,7 +48,8 @@ public class TutorialScreen : ScreenBase
 
 	public void ShowTutorialMessage(TutorialStep step)
 	{
-		TutorialCharacter.gameObject.SetActive(step.hasCharacter);
+		TutorialCharacter.gameObject.SetActive(step.hasCharacter && !step.hasCharacter2);
+		TutorialCharacter2.gameObject.SetActive(step.hasCharacter2);
 
 		TutorialPointerImage.gameObject.SetActive (step.hasPointer);
 		if (step.hasPointer) 
@@ -96,7 +99,7 @@ public class TutorialScreen : ScreenBase
 		switch (step.textPos) 
 		{
 		case TutorialStep.TextPosition.Bottom:
-			TutorialTextPanel.transform.localPosition = new Vector3 (96,-475,0);
+			TutorialTextPanel.transform.localPosition = new Vector3 (96,-440,0);
 			break;
 		case TutorialStep.TextPosition.Center:
 			TutorialTextPanel.transform.localPosition = new Vector3 (0,0,0);
@@ -104,8 +107,18 @@ public class TutorialScreen : ScreenBase
 		case TutorialStep.TextPosition.Top:
 			TutorialTextPanel.transform.localPosition = new Vector3 (0,450,0);
 			break;
+		case TutorialStep.TextPosition.Flip:
+			TutorialTextPanel.transform.localPosition = new Vector3 (-88f, 38f,0);
+			Vector3 flipVector = new Vector3(-1f, 1f, 1f);
+			TutorialTextPanel.transform.localScale = flipVector;
+			TutorialDescriptionMessage.transform.localScale = flipVector;
+			TutorialTapMessage.transform.localScale = flipVector;
+			break;
 		}
 
+		if(ScreenManager.Instance.current != null && ScreenManager.Instance.current.name == "FindToolScreen(Clone)")
+			ScreenManager.Instance.current.SetActive(false);
+		
 		switch (step.panel) 
 		{
 		case TutorialStep.enumPanel.Action:
@@ -133,6 +146,22 @@ public class TutorialScreen : ScreenBase
 			blocker = true;
 			StartCoroutine(TimedCoroutine(step.time));
 			break;
+		case TutorialStep.enumPanel.Screen:
+			blocker = true;
+			ScreenManager.Instance.current.GetComponent<ScreenBase>().onDestroy += ()=>{
+				StartCoroutine(TimedCoroutine(0.1f));
+			};
+			ScreenManager.Instance.current.SetActive(true);
+			break;
+		case TutorialStep.enumPanel.Story:
+			GameObject go = PanelManager.Instance.ActionPanel.GetAction(step.target.name).gameObject;
+			AddClickObject(go);
+			if(go.name[go.name.Length-1] == '9')
+			{
+				step.targetFocus.transform.localPosition = new Vector2(step.targetFocus.transform.localPosition.x , step.targetFocus.transform.localPosition.y + 56f);
+				TutorialPointerImage.transform.localPosition = new Vector3(TutorialPointerImage.transform.localPosition.x, TutorialPointerImage.transform.localPosition.y + 56f);
+			}
+			break;
 		}
 
 		SendMessage("OnShowTutorialMessage", step);
@@ -150,7 +179,7 @@ public class TutorialScreen : ScreenBase
 		blocker = true;
 		GameObject go = Instantiate(obj, obj.transform.parent) as GameObject;
 		go.transform.SetParent(AnchorTarget, true);
-		go.gameObject.AddComponent<OnClickDelegatController>().onClick += () => {blocker = false; Destroy(go); TutorialTap();};
+		go.AddComponent<OnClickDelegatController>().onClick += () => {blocker = false; Destroy(go); TutorialTap();};
 		return go;
 	}
 

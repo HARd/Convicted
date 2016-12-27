@@ -10,7 +10,7 @@ public class Notification : MonoBehaviour
 	public string title = "Title"; 
 	public int localizationTitle = 0; 
 	public string message = "Long message text";
-	public int localizationMessage = 0; 
+	public int[] localizationMessage;
 	public Color32 bgColor = new Color32(0xff, 0x44, 0x44, 255);
 	public bool sound = true;
 	public bool vibrate = true;
@@ -25,8 +25,11 @@ public class Notification : MonoBehaviour
 	{
 		if(localizationTitle > 0)
 			title = Localization.Instance.GetLocale(localizationTitle);
-		if(localizationMessage > 0)
-			message = Localization.Instance.GetLocale(localizationMessage);
+		if (localizationMessage.Length > 0) 
+		{
+			message = Localization.Instance.GetLocale(localizationMessage[UnityEngine.Random.Range(0,localizationMessage.Length-1)]);
+		}
+			
 	}
 
 	public void SendNotification(long seconds)

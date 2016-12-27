@@ -31,8 +31,10 @@ public class GUIController : MonoBehaviour
 	void Start()
 	{
 		// Выставляем ежедневный бонус для новых игроков используя уникальный опыт индуских кодеров
-		if (SaveLoadXML.HasKey("PLAYER_INFO") && PlayerInfo.Instance.day == 0 || GameData.current.nextDailyBonusTime == new System.DateTime()) 
+		//if (SaveLoadXML.HasKey("PLAYER_INFO") && PlayerInfo.Instance.day == 0 || GameData.current.nextDailyBonusTime == new System.DateTime()) 
+		if (GameData.current.nextDailyBonusTime == new System.DateTime()) 
 		{
+			//print(" GameData.current.nextDailyBonusTime = " + GameData.current.nextDailyBonusTime + "  " + new System.DateTime());
 			GameData.current.nextDailyBonusTime = System.DateTime.Now.Add (new System.TimeSpan (0, 5, 0));
 			//GameData.current.nextDailyBonusTime = System.DateTime.Now.Add (new System.TimeSpan (0, 0, 30));
 		}
@@ -42,37 +44,16 @@ public class GUIController : MonoBehaviour
 	void Update()
 	{
 
-		if(Input.GetKeyDown(KeyCode.Escape) && !PlayerInfo.Instance.isTutorial)
+		if(Input.GetKeyDown(KeyCode.Escape) && !PlayerInfo.Instance.isTutorial && !PanelManager.Instance.EventPanel.gameObject.activeSelf)
 		{
-			if(PanelManager.Instance.ReturnButton.gameObject.activeSelf)
+			if(!PanelManager.Instance.IsActionPanel())
 				PanelManager.Instance.CloseButton();
 			else if(Inventory.Instance.IsVisible)
-			{
 				Inventory.Instance.GetComponent<PanelElementMover>().ChangeShow();
-			}
 			else if(ScreenManager.Instance.current != null)
-			{
 				Destroy(ScreenManager.Instance.current);
-			}
 			else
-			{
-				AudioManager.Instance.Play(1);
-				string text = Localization.Instance.GetLocale(898);
-				//hint.ShowDialog(text,Localization.Instance.GetLocale(76),2,"");
-				ScreenManager.Instance.CreateScreen("HintPanel");
-				ScreenManager.Instance.current.GetComponent<Hint>().ShowDialog(text,Localization.Instance.GetLocale(76), (confirm)=>
-					{
-						if(confirm)
-						{
-							if(PlayerInfo.Instance.day > 0)
-								PlayerInfo.Instance.SaveGame();	
-							
-							SaveLoadXML.SaveGameDataXML();
-							SceneManager.LoadScene(1);
-						}
-				});
-
-			}
+				CreateExiteMainMenuDialog();
 		}
 
 		if(effect_timer > 0) 
@@ -128,4 +109,23 @@ public class GUIController : MonoBehaviour
 		ScreenManager.Instance.CreateScreen("HintPanel");
 		ScreenManager.Instance.current.GetComponent<Hint>().ShowHint(_object.GetComponent<QuestController>().hintText);
 	}
+
+	public void CreateExiteMainMenuDialog()
+	{
+		AudioManager.Instance.Play(1);
+		ScreenManager.Instance.CreateScreen("HintPanel");
+		ScreenManager.Instance.current.GetComponent<Hint>().ShowDialog(Localization.Instance.GetLocale(898), Localization.Instance.GetLocale(76), (confirm)=>
+			{
+				if(confirm)
+				{
+					if(PlayerInfo.Instance.day > 0)
+						PlayerInfo.Instance.SaveGame();	
+
+					SaveLoadXML.SaveGameDataXML();
+					PlayerInfo.Instance.SaveGame();
+					SceneManager.LoadScene(1);
+				}
+			});
+	}
+
 }

@@ -25,6 +25,7 @@ public class PlayerInfo : MonoBehaviour,  ISerializeXML
 	public float inmate_rep = 0;
 	public float guard_rep = 0;
 	public float day = 0;
+	public int day_offset = 0;
 	public float tunnel;
 	public int consealment;
 
@@ -38,7 +39,8 @@ public class PlayerInfo : MonoBehaviour,  ISerializeXML
 	public string[] GetStringValues()
 	{
 		string[] str = {health.ToString(), cash.ToString(), energy.ToString(), body.ToString(), charisma.ToString(), mind.ToString(), 
-			inmate_rep.ToString(), guard_rep.ToString(), day.ToString(), tunnel.ToString(), consealment.ToString()};
+			inmate_rep.ToString(), guard_rep.ToString(), day.ToString(), tunnel.ToString(), consealment.ToString(), 
+			max_health.ToString(), max_str.ToString(), max_dex.ToString(), max_int.ToString()};
 		return str;
 	}
 
@@ -55,6 +57,10 @@ public class PlayerInfo : MonoBehaviour,  ISerializeXML
 		day = (float)Convert.ChangeType(str[8], typeof(float));
 		tunnel = (float)Convert.ChangeType(str[9], typeof(float));
 		consealment = (int)Convert.ChangeType(str[10], typeof(int));
+		max_health = (int)Convert.ChangeType(str[11], typeof(int));
+		max_str = (int)Convert.ChangeType(str[12], typeof(int));
+		max_dex = (int)Convert.ChangeType(str[13], typeof(int));
+		max_int = (int)Convert.ChangeType(str[14], typeof(int));
 	}
 		
 	public void Reset()
@@ -119,7 +125,17 @@ public class PlayerInfo : MonoBehaviour,  ISerializeXML
 		if(SaveLoadXML.LoadXML())
 			LoadGame();
 
-		GameData.current.AddCharacterCompleted(0);
+//		GameData.current.AddCharacterCompleted(0);
+//		GameData.current.AddCharacterCompleted(1);
+	}
+
+	void Awake()
+	{
+		foreach (Trait trait in traitList) 
+		{
+			if(Parameter.ChangeStart(trait.StatBonusList))
+				Debug.LogErrorFormat("Object {0} Error", name);
+		}
 	}
 
 	public void LoadGame()
@@ -344,7 +360,7 @@ public class PlayerInfo : MonoBehaviour,  ISerializeXML
 	}
 	//---------------------------------------------------------------
 
-	public void EquipItem(string name, bool equip, bool purchase = false)
+	public void EquipItem(string name, bool equip, bool purchase = false, bool recipe = false)
 	{
 		//print("-- EquipItem " + name);
 		if(name == "all" && !equip)
@@ -353,6 +369,12 @@ public class PlayerInfo : MonoBehaviour,  ISerializeXML
 		{
 			if(purchase) 
 				cash -= GetItem(name).cost;
+			else if(HasItem(name) && !recipe)
+			{
+				GameObject screen = ScreenManager.Instance.CreateScreen("FindToolScreen");
+				Sprite invSprite = SpriteManager.Instatce.GetSprite("Tools/" + name + "/inv");
+				screen.GetComponent<FindToolScreen>().SetScreenView(invSprite, PlayerInfo.Instance.GetItemText(name), equip);
+			}
 			
 			RefreshInventory(name, equip);
 		}

@@ -13,6 +13,8 @@ public sealed class GameStrings : SimpleKeyValueDataFile
 	string resourceExtension = ".txt";
 	const string noStringFormat = "NO STRING \"{0}\"";
 
+	string accetsName = @"Assets/StreamingAssets/Text/Strings";
+
 
 
 	private static readonly GameStrings instance = new GameStrings();
@@ -38,5 +40,11 @@ public sealed class GameStrings : SimpleKeyValueDataFile
 	{
 		string ext = (GameData.current.lang == "en") ? "" : GameData.current.lang;
 		Debug.LogFormat("{0}: succesfully loaded {1} strings from {2}", GetType().Name, Count, resourceName + ext + resourceExtension);
+	}
+
+	public static void SaveData()
+	{
+		string ext = (GameData.current.lang == "en") ? "" : "_" + GameData.current.lang;
+		instance.SaveFromStreamingAsset(instance.accetsName + ext + instance.resourceExtension);
 	}
 }

@@ -11,7 +11,7 @@ public class cash : Parameter
 
 	public override void ChangeStat()
 	{
-		Debug.Log("-- ChangeStat() cash - " + value);
+		//Debug.Log("-- ChangeStat() cash - " + value);
 		PlayerInfo.Instance.cash += value;
 
 		if(PlayerInfo.Instance.cash < 0) 

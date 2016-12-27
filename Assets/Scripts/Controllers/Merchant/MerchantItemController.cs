@@ -45,4 +45,9 @@ public class MerchantItemController : MonoBehaviour
 				ItemName = "no_cash";
 		}
 	}
+
+	public GameObject DuplicateItemImage() 
+	{
+		return Instantiate(ItemImage.gameObject, ItemImage.transform.parent) as GameObject;
+	}
 }

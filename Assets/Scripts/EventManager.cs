@@ -88,7 +88,7 @@ public class EventManager : MonoBehaviour
 
 	public void SendToInfirmary()
 	{
-		PanelManager.Instance.EventPanel.gameObject.SetActive(true);
+		PanelManager.Instance.CallEventPanel(true);
 		WorldTime.Instance.pause = true;
 		descriptionText.text = Localization.Instance.GetLocale(63);
 		PlayerInfo.Instance.ChangeTrigger("infirmary",true, true);

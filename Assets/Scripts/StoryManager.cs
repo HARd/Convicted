@@ -19,8 +19,8 @@ public class StoryManager : MonoBehaviour
 	public GameObject storyActions {set; get;}
 	public GameObject storyTasks {set; get;}
 
-	const string resourceStoryPath = "Story/Story/character";
-	const string resourceStoryActionsPath = "Story/StoryActions/character";
+	public const string resourceStoryPath = "Story/Story/character";
+	public const string resourceStoryActionsPath = "Story/StoryActions/character";
 
 
 	// Use this for initialization

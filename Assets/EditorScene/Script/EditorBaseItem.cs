@@ -2,39 +2,84 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using System.Collections.Generic;
-using ObjectsExtensionMethods;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
-public class EditorBaseItem : MonoBehaviour, IPointerClickHandler
+public class EditorBaseItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler 
 {
 	public Text textName;
 
 	public Transform storyTransform;
 
-	public ContainerController container;
+	public Color selectColor;
+
+	public Color enterColor;
+
+	Color startColor;
+	Image image;
+
+	void Awake() 
+	{
+		image = GetComponent<Image>();
+		startColor = image.color;
+	}
 
 	public virtual void OnPointerClick (PointerEventData eventData)
 	{
-		SendMessageUpwards("ResetColor");
-		container.Draw(storyTransform);
-		Image image = GetComponent<Image>();
-		image.color = new Color(image.color.r, image.color.g, 0.3f);
+		if(!IsSelected())
+			SetColor(selectColor);
+		
+		#if UNITY_EDITOR
+		Selection.activeGameObject = storyTransform.gameObject;
+		#endif
 	}
 
-	public void SetColorAction(Color color)
+	public virtual void OnPointerEnter(PointerEventData eventData)
 	{
-		Image image = GetComponent<Image>();
+		if(!IsSelected())
+			SetColor(enterColor);
+	}
+
+	public virtual void OnPointerExit(PointerEventData eventData)
+	{
+		if(!IsSelected())
+			ResetColor();
+	}
+
+	public void SetColor(Color color)
+	{
 		image.color = color;
 	}
 
-	static public EditorBaseItem CreatEditorChangeItem(GameObject story, GameObject prefab, Transform parent, string text = "", ContainerController container = null)
+	public void SetStartColor(Color color)
+	{
+		startColor = color;
+		ResetColor();
+	}
+
+	public void ResetColor()
+	{
+		image.color = startColor;
+	}
+
+	public void SetRespondable(bool value)
+	{
+		image.raycastTarget = value;
+	}
+
+	public bool IsSelected()
+	{
+		return image.color == selectColor;
+	}
+
+	static public EditorBaseItem CreatEditorChangeItem(GameObject story, GameObject prefab, Transform parent, string text = "")
 	{
 		GameObject action = Instantiate(prefab, parent, false) as GameObject;
 		action.name = story.name;
 		EditorBaseItem eAction = action.GetComponent<EditorBaseItem>();
 		eAction.storyTransform = story.transform;
 		eAction.textName.text = text;
-		eAction.container = container;
 		return eAction;
 	}
 }

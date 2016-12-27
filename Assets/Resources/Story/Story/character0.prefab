@@ -187,6 +187,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000010981778438
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000013507743220}
+  - 114: {fileID: 114000010533567816}
+  m_Layer: 0
+  m_Name: go_kitchen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000011016533008
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +245,7 @@ GameObject:
   - 4: {fileID: 4000012368931526}
   - 114: {fileID: 114000014250120844}
   m_Layer: 0
-  m_Name: get_scissors
+  m_Name: go_amb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -294,6 +310,22 @@ GameObject:
   - 114: {fileID: 114000014222801564}
   m_Layer: 0
   m_Name: find_duct_tape
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000012937226806
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010549774642}
+  - 114: {fileID: 114000010574651522}
+  m_Layer: 0
+  m_Name: get_scissors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -570,6 +602,19 @@ Transform:
   - {fileID: 4000012237067770}
   m_Father: {fileID: 4000010644110076}
   m_RootOrder: 1
+--- !u!4 &4000010549774642
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012937226806}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000011515189206}
+  m_RootOrder: 0
 --- !u!4 &4000010627213028
 Transform:
   m_ObjectHideFlags: 1
@@ -675,6 +720,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 4000010549774642}
+  - {fileID: 4000013507743220}
   - {fileID: 4000012368931526}
   m_Father: {fileID: 4000010644110076}
   m_RootOrder: 12
@@ -759,7 +806,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000011515189206}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!4 &4000012788487770
 Transform:
   m_ObjectHideFlags: 1
@@ -869,6 +916,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000014079401170}
   m_RootOrder: 0
+--- !u!4 &4000013507743220
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010981778438}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000011515189206}
+  m_RootOrder: 1
 --- !u!4 &4000013780976150
 Transform:
   m_ObjectHideFlags: 1
@@ -968,6 +1028,46 @@ MonoBehaviour:
   requirements:
   - stat: item
     event_name: escape_tunnel_success
+    value: 1
+--- !u!114 &114000010533567816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010981778438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d11817891c4964481b5382ac6dbbac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_id: 2507
+  hint_id: 2508
+  image_id: 0
+  active: 0
+  complete: 0
+  requirements:
+  - stat: item
+    event_name: kitchen_den
+    value: 1
+--- !u!114 &114000010574651522
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012937226806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d11817891c4964481b5382ac6dbbac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_id: 227
+  hint_id: 766
+  image_id: 0
+  active: 0
+  complete: 0
+  requirements:
+  - stat: item
+    event_name: scissors
     value: 1
 --- !u!114 &114000010742651922
 MonoBehaviour:
@@ -1480,12 +1580,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d11817891c4964481b5382ac6dbbac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_id: 227
-  hint_id: 766
+  text_id: 2509
+  hint_id: 2510
   image_id: 0
   active: 0
   complete: 0
   requirements:
   - stat: item
-    event_name: scissors
+    event_name: dan_amb
     value: 1

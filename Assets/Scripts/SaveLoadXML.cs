@@ -114,6 +114,8 @@ public static class SaveLoadXML
 			Debug.LogErrorFormat("Game: recreating corrupted {0}.", convicted);
 			if(File.Exists(Path.Combine(DataStorage.Instance.GetPath(), convicted))) 
 				File.Delete(Path.Combine(DataStorage.Instance.GetPath(), convicted));
+			if(File.Exists(Path.Combine(DataStorage.Instance.GetPath(), gameData))) 
+				File.Delete(Path.Combine(DataStorage.Instance.GetPath(), gameData));
 		}
 //		else
 //			PlayerInfo.Instance.LoadGame();
@@ -136,6 +138,8 @@ public static class SaveLoadXML
 			Debug.LogErrorFormat("GameData: recreating corrupted {0}.", gameData);
 			if(File.Exists(Path.Combine(DataStorage.Instance.GetPath(), gameData))) 
 				File.Delete(Path.Combine(DataStorage.Instance.GetPath(), gameData));
+			if(File.Exists(Path.Combine(DataStorage.Instance.GetPath(), convicted))) 
+				File.Delete(Path.Combine(DataStorage.Instance.GetPath(), convicted));
 		}
 		else
 		{

@@ -9,12 +9,14 @@ public class ContainerEventController : ContainerController
 	[SerializeField]
 	EventPanelController eventPanelController;
 
+	public EventPanel currentEventPanel;
+
 	List<EventPanel> EventPanels = new List<EventPanel>();
+
 
 	public override void Draw(Transform  transform)
 	{
-		//print("--ContainerEventController.Draw() " + name);
-		EventPanel.Clear();
+		EventPanelLine.Clear();
 		EventPanels.Clear();
 		
 		DestroyContent();
@@ -28,19 +30,16 @@ public class ContainerEventController : ContainerController
 		DrawPreview(0);
 	}
 
-	public void SetPanelsColorDefault()
-	{
-		foreach(EventPanel eventPanel in EventPanels)
-			eventPanel.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0.4f);
-	}
-
 	public void DrawPreview(EventPanel eventPanel)
 	{
+		if(currentEventPanel)
+			currentEventPanel.SetActive(false);
+		
+		currentEventPanel = eventPanel;
 		eventPanelController.gameObject.SetActive(true);
 		List<Action> actionList = eventPanel.generalEvent.GetChildrenComponents<Action>();
 		if(actionList.Count > 0) 
 		{
-			SetPanelsColorDefault();
 			eventPanelController.descriptionText.text = Localization.Instance.GetLocale(eventPanel.generalEvent.description_id);
 			eventPanelController.EventActionPanel.DrawActions(actionList, true);
 		}
@@ -48,16 +47,12 @@ public class ContainerEventController : ContainerController
 		{
 			List<Outcome> outcomList = eventPanel.generalEvent.GetChildrenComponents<Outcome>();
 			if(outcomList.Count > 1)
-			{
 				(eventPanelController.EventActionPanel as EditorActionPanelController).DrawPreview(outcomList);
-			}
 			else
-			{
-				SetPanelsColorDefault();
 				DrawPreview(outcomList[0]);
-			}
 		}
-		eventPanel.GetComponent<Image>().color = Color.blue;
+
+		eventPanel.SetActive(true);
 	}
 
 	public void DrawPreview(int id)
@@ -75,7 +70,6 @@ public class ContainerEventController : ContainerController
 
 	public void DrawPreview(Outcome outcom)
 	{
-		//SetPanelsColorDefault();
 		eventPanelController.descriptionText.text = outcom.description;
 		eventPanelController.EventActionPanel.ClearActions();
 		eventPanelController.EventActionPanel.DrawAction(0, EventManager.Instance.continue_action, new Color32(50,50,50,255));
@@ -83,21 +77,14 @@ public class ContainerEventController : ContainerController
 
 	public void DrawLine()
 	{
-		foreach(EventPanel eventPanel in EventPanels)
-		{
-			eventPanel.DrawLine(EventPanels);
-		}
+		EventPanelLine.DrawLine(EventPanels);
 	}
 		
 	public void DrawEventPanels(List<EventPanel> EventPanelList)
 	{
 		foreach(EventPanel eventPanel in EventPanelList)
-		{
 			foreach(EditorBaseItem eItem in eventPanel.GetChildrenComponents<EditorBaseItem>())
-			{
 				DrawEventPanels(CreateEventPanel(eItem.storyTransform));
-			}
-		}
 	}
 
 	public virtual List<EventPanel> CreateEventPanel(Transform  transform)
@@ -106,6 +93,7 @@ public class ContainerEventController : ContainerController
 		RandomEventController randomEvent = transform.GetComponent<RandomEventController>();
 		if(randomEvent != null)
 		{
+			randomEvent.randomEventList.RemoveAll(x => x == null);
 			foreach(GeneralEvent generalEvent in randomEvent.randomEventList)
 			{
 				if(!EventPanels.Exists(x => x.generalEvent == generalEvent))
@@ -145,11 +133,53 @@ public class ContainerEventController : ContainerController
 	public EventPanel CreatePanel(GeneralEvent generalEvent)
 	{
 		GameObject item = Instantiate(actionPrefab, content.transform, false) as GameObject;
-		//item
 		item.name = generalEvent.name;
 		EventPanel eventPanel = item.GetComponent<EventPanel>();
 		eventPanel.generalEvent = generalEvent;
-		eventPanel.containerEventController = this;
+		countItems++;
 		return eventPanel;
+	}
+
+	public override void DestroyContent()
+	{
+		base.DestroyContent();
+
+		foreach(EventPanel eventPanel in EventPanels)
+			Destroy(eventPanel.gameObject);
+
+		EventPanels.Clear();
+
+		eventPanelController.gameObject.SetActive(false);
+	}
+
+	public void OnEventPanelClick(EventPanel eventPanel)
+	{
+		currentContainerController = this;
+
+		if(currentEventPanel != null)
+			currentEventPanel.BroadcastMessage("SetRespondable", false);
+		
+		DrawPreview(eventPanel);
+	}
+
+
+	public void OnEditorBaseItemClick(EditorBaseItem item)
+	{
+		currentContainerController = this;
+	}
+
+	public override Transform GetCurrentStoryTransform()
+	{
+		return currentEventPanel.GetCurrentStoryTransform();
+	}
+		
+	public bool IsEmpty()
+	{
+		return EventPanels.Count == 0;
+	}
+
+	public int EventPanelsCount()
+	{
+		return EventPanels.Count;
 	}
 }

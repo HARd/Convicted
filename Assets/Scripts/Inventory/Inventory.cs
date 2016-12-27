@@ -234,7 +234,7 @@ public class Inventory : MonoBehaviour
 			{
 				//holder.Tool.Destroy();
 				holder.Remove();
-				if(GetHolderCount()-1 < 5)
+				if(GetHolderCount() < 5)
 					CreateHolder();
 			}
 		}

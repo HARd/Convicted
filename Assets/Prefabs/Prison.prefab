@@ -361,7 +361,7 @@ GameObject:
   - 4: {fileID: 4000014272149288}
   - 114: {fileID: 114000012732871456}
   m_Layer: 0
-  m_Name: show_ad_reward_event
+  m_Name: show_ad_rest_reward_event
   m_TagString: RandomEvent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -818,6 +818,22 @@ GameObject:
   m_Layer: 0
   m_Name: defeat_outcome
   m_TagString: Outcome
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000010213996098
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010495586656}
+  - 114: {fileID: 114000012563594490}
+  m_Layer: 0
+  m_Name: advertisement_dream_event
+  m_TagString: RandomEvent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1485,6 +1501,22 @@ GameObject:
   m_Layer: 0
   m_Name: continue_event
   m_TagString: Action
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000010390147246
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010011877432}
+  - 114: {fileID: 114000010424035586}
+  m_Layer: 0
+  m_Name: steal_crowbar_carlos
+  m_TagString: RandomEvent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4234,6 +4266,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000011035763562
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012193306074}
+  - 114: {fileID: 114000013103880778}
+  m_Layer: 0
+  m_Name: heard_about_omnicin_continue
+  m_TagString: RandomEvent
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000011047019220
 GameObject:
   m_ObjectHideFlags: 1
@@ -6266,6 +6314,23 @@ GameObject:
   m_Layer: 0
   m_Name: do_nothing_outcome
   m_TagString: Outcome
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000011535166070
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011763874362}
+  - 114: {fileID: 114000011237545114}
+  - 114: {fileID: 114000013453884832}
+  m_Layer: 0
+  m_Name: show_ad
+  m_TagString: Action
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9691,6 +9756,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000012277981794
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012666425072}
+  - 114: {fileID: 114000012930260270}
+  m_Layer: 0
+  m_Name: steal_crowbar_carlos
+  m_TagString: Outcome
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000012278185174
 GameObject:
   m_ObjectHideFlags: 1
@@ -10058,6 +10139,22 @@ GameObject:
   - 114: {fileID: 114000011640990042}
   m_Layer: 0
   m_Name: watch_tv_success(highrep)
+  m_TagString: Outcome
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000012366671342
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011243528212}
+  - 114: {fileID: 114000010145299616}
+  m_Layer: 0
+  m_Name: show_ad_outcome
   m_TagString: Outcome
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10480,6 +10577,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000012482914736
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011014545634}
+  - 114: {fileID: 114000012960672960}
+  m_Layer: 0
+  m_Name: show_ad_reward_event
+  m_TagString: RandomEvent
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000012492430906
 GameObject:
   m_ObjectHideFlags: 1
@@ -10739,6 +10852,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000012544278984
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000013887096460}
+  - 114: {fileID: 114000013473449630}
+  - 114: {fileID: 114000012993072806}
+  m_Layer: 0
+  m_Name: continue_event
+  m_TagString: Action
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000012545978584
 GameObject:
   m_ObjectHideFlags: 1
@@ -10849,6 +10979,22 @@ GameObject:
   m_Layer: 0
   m_Name: look_inmates
   m_TagString: Action
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000012580152552
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000013782925328}
+  - 114: {fileID: 114000013134961130}
+  m_Layer: 0
+  m_Name: skip_ad_outcome
+  m_TagString: Outcome
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11930,7 +12076,7 @@ GameObject:
   - 4: {fileID: 4000013652758922}
   - 114: {fileID: 114000011809826798}
   m_Layer: 0
-  m_Name: advertisement_dream_event
+  m_Name: advertisement_rest_event
   m_TagString: RandomEvent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13903,6 +14049,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011156753066}
   - 114: {fileID: 114000012715300546}
+  - 114: {fileID: 114000014026219470}
   m_Layer: 0
   m_Name: show_ad
   m_TagString: Action
@@ -15074,6 +15221,22 @@ GameObject:
   m_Layer: 0
   m_Name: ambush_rumor_spread_medium_fight
   m_TagString: SingleCombat
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000013619312126
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011285218914}
+  - 114: {fileID: 114000012118209852}
+  m_Layer: 0
+  m_Name: skip_ad
+  m_TagString: Action
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18011,6 +18174,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000012540751806}
   m_RootOrder: 0
+--- !u!4 &4000010011877432
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010390147246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4000012666425072}
+  m_Father: {fileID: 4000010837595228}
+  m_RootOrder: 147
 --- !u!4 &4000010013648622
 Transform:
   m_ObjectHideFlags: 1
@@ -19597,7 +19774,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 4000013697158596}
+  - {fileID: 4000013887096460}
   - {fileID: 4000011089420626}
   m_Father: {fileID: 4000010837595228}
   m_RootOrder: 138
@@ -19823,6 +20000,21 @@ Transform:
   - {fileID: 4000010407568152}
   m_Father: {fileID: 4000010372689930}
   m_RootOrder: 0
+--- !u!4 &4000010495586656
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010213996098}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4000011763874362}
+  - {fileID: 4000011285218914}
+  m_Father: {fileID: 4000010837595228}
+  m_RootOrder: 124
 --- !u!4 &4000010497236830
 Transform:
   m_ObjectHideFlags: 1
@@ -21137,8 +21329,8 @@ Transform:
   - {fileID: 4000011852679400}
   - {fileID: 4000010741149496}
   - {fileID: 4000011450903154}
-  - {fileID: 4000013652758922}
-  - {fileID: 4000014272149288}
+  - {fileID: 4000010495586656}
+  - {fileID: 4000011014545634}
   - {fileID: 4000012240235158}
   - {fileID: 4000010003657248}
   - {fileID: 4000010773104740}
@@ -21160,6 +21352,9 @@ Transform:
   - {fileID: 4000014236383142}
   - {fileID: 4000011520049580}
   - {fileID: 4000010612652934}
+  - {fileID: 4000010011877432}
+  - {fileID: 4000013652758922}
+  - {fileID: 4000014272149288}
   m_Father: {fileID: 4000013870332542}
   m_RootOrder: 7
 --- !u!4 &4000010842645368
@@ -21844,6 +22039,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000013409262218}
   m_RootOrder: 1
+--- !u!4 &4000011014545634
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012482914736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4000011243528212}
+  m_Father: {fileID: 4000010837595228}
+  m_RootOrder: 125
 --- !u!4 &4000011019131076
 Transform:
   m_ObjectHideFlags: 1
@@ -22124,7 +22333,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 4000013416701338}
+  - {fileID: 4000013697158596}
+  - {fileID: 4000012193306074}
   m_Father: {fileID: 4000010432942014}
   m_RootOrder: 1
 --- !u!4 &4000011093344088
@@ -22665,6 +22875,19 @@ Transform:
   - {fileID: 4000010040884188}
   m_Father: {fileID: 4000012884648456}
   m_RootOrder: 0
+--- !u!4 &4000011243528212
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012366671342}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000011014545634}
+  m_RootOrder: 0
 --- !u!4 &4000011247259734
 Transform:
   m_ObjectHideFlags: 1
@@ -22801,6 +23024,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000012542392266}
   m_RootOrder: 0
+--- !u!4 &4000011285218914
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013619312126}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4000013782925328}
+  m_Father: {fileID: 4000010495586656}
+  m_RootOrder: 1
 --- !u!4 &4000011290227808
 Transform:
   m_ObjectHideFlags: 1
@@ -24347,6 +24584,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000010313679702}
   m_RootOrder: 11
+--- !u!4 &4000011763874362
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011535166070}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000010495586656}
+  m_RootOrder: 0
 --- !u!4 &4000011766939488
 Transform:
   m_ObjectHideFlags: 1
@@ -25903,6 +26153,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000011717091524}
   m_RootOrder: 0
+--- !u!4 &4000012193306074
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011035763562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4000013416701338}
+  m_Father: {fileID: 4000011089420626}
+  m_RootOrder: 1
 --- !u!4 &4000012195106746
 Transform:
   m_ObjectHideFlags: 1
@@ -27444,6 +27708,19 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010951272604}
+  m_RootOrder: 0
+--- !u!4 &4000012666425072
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012277981794}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000010011877432}
   m_RootOrder: 0
 --- !u!4 &4000012670669938
 Transform:
@@ -30314,7 +30591,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000011879148324}
-  m_Father: {fileID: 4000011089420626}
+  m_Father: {fileID: 4000012193306074}
   m_RootOrder: 0
 --- !u!4 &4000013418261418
 Transform:
@@ -31085,7 +31362,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012868967294}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -31093,7 +31370,7 @@ Transform:
   - {fileID: 4000011156753066}
   - {fileID: 4000014165765692}
   m_Father: {fileID: 4000010837595228}
-  m_RootOrder: 124
+  m_RootOrder: 148
 --- !u!4 &4000013660415568
 Transform:
   m_ObjectHideFlags: 1
@@ -31303,12 +31580,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012448450422}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 4000010432942014}
+  m_Father: {fileID: 4000011089420626}
   m_RootOrder: 0
 --- !u!4 &4000013706883206
 Transform:
@@ -31692,6 +31969,19 @@ Transform:
   - {fileID: 4000011815014288}
   m_Father: {fileID: 4000012670669938}
   m_RootOrder: 0
+--- !u!4 &4000013782925328
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012580152552}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000011285218914}
+  m_RootOrder: 0
 --- !u!4 &4000013784103376
 Transform:
   m_ObjectHideFlags: 1
@@ -31890,8 +32180,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012993783206}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -31991,6 +32281,19 @@ Transform:
   - {fileID: 4000012994244686}
   m_Father: {fileID: 4000010305769296}
   m_RootOrder: 1
+--- !u!4 &4000013887096460
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012544278984}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000010432942014}
+  m_RootOrder: 0
 --- !u!4 &4000013889367942
 Transform:
   m_ObjectHideFlags: 1
@@ -33417,14 +33720,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010091000842}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000012112794316}
   m_Father: {fileID: 4000010837595228}
-  m_RootOrder: 125
+  m_RootOrder: 149
 --- !u!4 &4000014278302968
 Transform:
   m_ObjectHideFlags: 1
@@ -33589,7 +33892,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -33614,7 +33916,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -33639,7 +33940,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -33701,7 +34001,7 @@ MonoBehaviour:
     value: 1
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   base_chance: 100
   chance: 0
   modifierList: []
@@ -33724,7 +34024,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -33797,7 +34096,7 @@ MonoBehaviour:
   eventTime:
     start: 0
     end: 0
-  base_chance: 10
+  base_chance: 20
   chance: 0
   modifierList:
   - stat: character
@@ -33857,7 +34156,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -33939,7 +34237,7 @@ MonoBehaviour:
   eventTime:
     start: 0
     end: 0
-  base_chance: 20
+  base_chance: 55
   chance: 0
   modifierList:
   - stat: story
@@ -34030,7 +34328,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -34261,7 +34558,6 @@ MonoBehaviour:
   requireItem:
   - get_info_special
   - chief_quest
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 20
@@ -34319,10 +34615,9 @@ MonoBehaviour:
   text: "\u041E\u0442\u0434\u043E\u0445\u043D\u0443\u0442\u044C"
   type: timed
   color: 0
-  time_boost: 180
+  time_boost: 60
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 0
@@ -34386,7 +34681,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -34470,7 +34764,9 @@ MonoBehaviour:
     \u043D\u0430\u043F\u0438\u0441\u0430\u043D\u043E, \u0447\u0442\u043E \u0443 \u043D\u0435\u0433\u043E
     \u0430\u043B\u043B\u0435\u0440\u0433\u0438\u044F \u043D\u0430 \u043E\u0440\u0435\u0445\u0438!"
   continuous: 0
-  itemMods: []
+  itemMods:
+  - mod: 0
+    item: dan_amb
   statChange:
   - stat: trigger
     event_name: steal_dragon_necke_janitor
@@ -34652,13 +34948,59 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 20
   requireStory: 
   statChange: []
   base_chance: 0
+  chance: 0
+  modifierList: []
+--- !u!114 &114000010145299616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012366671342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c554afecaad1224c86ebc3412474fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description_id: 904
+  description: "\u042F \u043F\u0440\u043E\u0441\u043D\u0443\u043B\u0441\u044F, \u0442\u0430\u043A
+    \u0438 \u043D\u0435 \u0437\u0430\u043F\u043E\u043C\u043D\u0438\u0432 \u0441\u0432\u043E\u0439
+    \u0441\u043E\u043D. \u0412\u043C\u0435\u0441\u0442\u043E \u0432\u043E\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u043D\u0438\u0439
+    \u0431\u044B\u043B\u0438 \u0441\u0442\u0440\u0430\u043D\u043D\u044B\u0435 \u043E\u0431\u0440\u0430\u0437\u044B
+    \u043B\u044E\u0434\u0435\u0439, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u043B\u0438
+    \u043C\u043D\u0435 \u043A\u0443\u043F\u0438\u0442\u044C \u0447\u0442\u043E-\u0442\u043E
+    \u043E\u0447\u0435\u043D\u044C \u043D\u0443\u0436\u043D\u043E\u0435. \u0415\u0449\u0435
+    \u043F\u043E\u043C\u043D\u044E \u0437\u0432\u0443\u043A\u0438 \u0441\u0440\u0430\u0436\u0435\u043D\u0438\u0439
+    \u0438 \u0437\u0432\u043E\u043D \u0438\u0433\u0440\u043E\u0432\u044B\u0445 \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u043E\u0432.
+    \u0421\u0442\u0440\u0430\u043D\u043D\u044B\u0439 \u0441\u043E\u043D. \u0417\u0430\u0442\u043E
+    \u044F \u043D\u0435\u043F\u043B\u043E\u0445\u043E \u0432\u044B\u0441\u043F\u0430\u043B\u0441\u044F
+    \u0438 \u0447\u0443\u0432\u0441\u0442\u0432\u043E\u0432\u0430\u043B \u0441\u0435\u0431\u044F
+    \u043D\u0430\u043C\u043D\u043E\u0433\u043E \u043B\u0443\u0447\u0448\u0435, \u0430
+    \u0432\u043E \u0432\u0440\u0435\u043C\u044F \u043F\u0435\u0440\u0435\u043A\u043B\u0438\u0447\u043A\u0438
+    \u043D\u0430\u0448\u0435\u043B \u043F\u0430\u0447\u043A\u0443, \u0432 \u043A\u043E\u0442\u043E\u0440\u043E\u0439
+    \u0431\u044B\u043B\u043E 5 \u0441\u0438\u0433\u0430\u0440\u0435\u0442. \u041D\u0435\u043F\u043B\u043E\u0445\u043E\u0435
+    \u043D\u0430\u0447\u0430\u043B\u043E \u0434\u043D\u044F!"
+  continuous: 0
+  itemMods: []
+  statChange:
+  - stat: cash
+    event_name: 
+    value: 3
+  - stat: energy
+    event_name: 
+    value: 150
+  - stat: health
+    event_name: 
+    value: 20
+  - stat: ad_cd
+    event_name: 
+    value: 2
+  base_chance: 100
   chance: 0
   modifierList: []
 --- !u!114 &114000010149206738
@@ -34781,7 +35123,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -34808,7 +35149,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - whiskey
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -34833,7 +35173,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
@@ -35043,7 +35382,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -35131,7 +35469,9 @@ MonoBehaviour:
     \u0422\u0435\u0431\u044F \u043E\u0431\u044B\u0441\u043A\u0430\u043B\u0438 \u0438
     \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u043B\u0438 \u0432 \u043A\u0430\u0440\u0446\u0435\u0440."
   continuous: 0
-  itemMods: []
+  itemMods:
+  - mod: 1
+    item: drugs
   statChange:
   - stat: guard_rep
     event_name: 
@@ -35190,7 +35530,7 @@ MonoBehaviour:
     value: 1
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   base_chance: 100
   chance: 0
   modifierList: []
@@ -35451,7 +35791,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -35476,7 +35815,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -35530,6 +35868,7 @@ MonoBehaviour:
   - {fileID: 114000010290928392}
   - {fileID: 114000011680864028}
   - {fileID: 114000013159165812}
+  - {fileID: 114000010424035586}
 --- !u!114 &114000010234603720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -35550,7 +35889,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - wad_of_putty
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -35576,7 +35914,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: guard_rep
     value: 50
@@ -35689,7 +36026,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - lighter
-  requireWeapon: []
   requireStat:
   - name: cash
     value: 3
@@ -35716,7 +36052,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -35804,7 +36139,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -35856,7 +36190,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -35994,7 +36327,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -36299,7 +36631,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -36372,7 +36703,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -36410,8 +36740,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomEventList:
+  - {fileID: 114000011809826798}
   - {fileID: 114000011449112484}
-  - {fileID: 114000013735331960}
   - {fileID: 114000010423700390}
   - {fileID: 114000013888984604}
   - {fileID: 114000010186359528}
@@ -36426,14 +36756,9 @@ MonoBehaviour:
   - {fileID: 114000014274952342}
   - {fileID: 114000012166343048}
   - {fileID: 114000011385034540}
-  - {fileID: 114000010913278038}
-  - {fileID: 114000013620801462}
-  - {fileID: 114000011969463518}
   - {fileID: 114000013380332188}
   - {fileID: 114000010526299114}
   - {fileID: 114000011277716076}
-  - {fileID: 114000012962240674}
-  - {fileID: 114000012204398944}
   - {fileID: 114000013970232670}
 --- !u!114 &114000010317562156
 MonoBehaviour:
@@ -36535,7 +36860,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: cash
     value: 60
@@ -36563,7 +36887,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -36631,7 +36954,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: cash
     value: -60
@@ -36658,7 +36980,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: cash
     value: 50
@@ -36735,7 +37056,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 10
@@ -36762,7 +37082,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -36787,7 +37106,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
@@ -36940,7 +37258,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -36965,7 +37282,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -36990,7 +37306,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -37157,7 +37472,7 @@ MonoBehaviour:
     value: 1
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   base_chance: 100
   chance: 0
   modifierList: []
@@ -37180,7 +37495,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -37205,25 +37519,24 @@ MonoBehaviour:
   time_boost: 360
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
-    value: 40
+    value: 60
   - name: charisma
     value: 60
   - name: cash
-    value: 5
+    value: 20
   requireStory: 
   statChange:
   - stat: energy
     event_name: 
-    value: -40
+    value: -60
   - stat: charisma
     event_name: 
     value: 1
   - stat: cash
     event_name: 
-    value: -5
+    value: -20
   base_chance: 0
   chance: 0
   modifierList: []
@@ -37289,7 +37602,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
@@ -37316,7 +37628,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -37362,7 +37673,7 @@ MonoBehaviour:
     value: 6
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   - stat: energy
     event_name: 
     value: -40
@@ -37387,7 +37698,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -37412,7 +37722,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -37537,6 +37846,31 @@ MonoBehaviour:
     value: -0.25
   - stat: trigger
     event_name: guard_beating
+    value: 1
+--- !u!114 &114000010424035586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010390147246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94438afb1b9bb7c46a69a8aef43e2dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description_id: 0
+  description: 
+  eventTime:
+    start: 0
+    end: 360
+  base_chance: 20
+  chance: 0
+  modifierList:
+  - stat: character
+    event_name: 
+    value: 1
+  - stat: story
+    event_name: access_lab
     value: 1
 --- !u!114 &114000010428871632
 MonoBehaviour:
@@ -37692,7 +38026,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
@@ -37758,7 +38091,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - shears
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -37784,7 +38116,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: guard_rep
     value: 75
@@ -37891,7 +38222,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -38077,7 +38407,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -38102,7 +38431,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 10
@@ -38131,7 +38459,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - whiskey
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -38183,7 +38510,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -38208,7 +38534,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -38252,7 +38577,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -38418,12 +38742,13 @@ MonoBehaviour:
   time_boost: 360
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
   - name: mind
     value: -30
+  - name: cash
+    value: 5
   requireStory: 
   statChange:
   - stat: energy
@@ -38432,6 +38757,9 @@ MonoBehaviour:
   - stat: mind
     event_name: 
     value: 1
+  - stat: cash
+    event_name: 
+    value: -5
   base_chance: 0
   chance: 0
   modifierList: []
@@ -38476,7 +38804,7 @@ MonoBehaviour:
   statChange:
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   - stat: trigger
     event_name: ambush_rumor_spread
     value: 0
@@ -38601,7 +38929,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -38626,7 +38953,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -38816,7 +39142,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -38846,7 +39171,7 @@ MonoBehaviour:
     value: 1
   - stat: cash
     event_name: 
-    value: 5
+    value: 2
   base_chance: 100
   chance: 0
   modifierList: []
@@ -38870,7 +39195,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - lighter
-  requireWeapon: []
   requireStat:
   - name: cash
     value: 1
@@ -39041,7 +39365,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -39190,7 +39513,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -39209,7 +39531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomEventList:
-  - {fileID: 114000013430630064}
+  - {fileID: 114000013103880778}
 --- !u!114 &114000010605246252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -39300,7 +39622,6 @@ MonoBehaviour:
   requireItem:
   - find_stash_special
   - chief_quest
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 20
@@ -39440,7 +39761,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -39480,7 +39800,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - drugs
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -39644,7 +39963,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -39670,7 +39988,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -39708,7 +40025,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -39798,7 +40114,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -39948,7 +40263,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -40169,7 +40483,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -40220,7 +40533,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -40245,7 +40557,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -40270,7 +40581,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -40327,7 +40637,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -40390,7 +40699,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -40416,27 +40724,26 @@ MonoBehaviour:
   time_boost: 360
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
-    value: 40
+    value: 50
   - name: charisma
     value: 30
   - name: charisma
     value: -60
   - name: cash
-    value: 1
+    value: 10
   requireStory: 
   statChange:
   - stat: energy
     event_name: 
-    value: -40
+    value: -50
   - stat: charisma
     event_name: 
     value: 1
   - stat: cash
     event_name: 
-    value: -1
+    value: -10
   base_chance: 0
   chance: 0
   modifierList: []
@@ -40464,17 +40771,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdba3189e476dd245841b7f400759284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_id: 902
-  text: "\u041F\u0440\u043E\u0441\u043D\u0443\u0442\u044C\u0441\u044F"
+  text_id: 2520
+  text: 
   type: skip
   color: 0
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
-  requireStat: []
+  requireStat:
+  - name: cash
+    value: 3
+  - name: energy
+    value: 0
+  - name: health
+    value: 0
   requireStory: 
-  statChange: []
+  statChange:
+  - stat: energy
+    event_name: 
+    value: 30
   base_chance: 0
   chance: 0
   modifierList: []
@@ -40570,7 +40885,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -40682,7 +40996,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -40826,7 +41139,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -40920,7 +41232,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -40977,39 +41288,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c554afecaad1224c86ebc3412474fc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description_id: 904
-  description: "\u042F \u043F\u0440\u043E\u0441\u043D\u0443\u043B\u0441\u044F, \u0442\u0430\u043A
-    \u0438 \u043D\u0435 \u0437\u0430\u043F\u043E\u043C\u043D\u0438\u0432 \u0441\u0432\u043E\u0439
-    \u0441\u043E\u043D. \u0412\u043C\u0435\u0441\u0442\u043E \u0432\u043E\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u043D\u0438\u0439
-    \u0431\u044B\u043B\u0438 \u0441\u0442\u0440\u0430\u043D\u043D\u044B\u0435 \u043E\u0431\u0440\u0430\u0437\u044B
-    \u043B\u044E\u0434\u0435\u0439, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u043B\u0438
-    \u043C\u043D\u0435 \u043A\u0443\u043F\u0438\u0442\u044C \u0447\u0442\u043E-\u0442\u043E
-    \u043E\u0447\u0435\u043D\u044C \u043D\u0443\u0436\u043D\u043E\u0435. \u0415\u0449\u0435
-    \u043F\u043E\u043C\u043D\u044E \u0437\u0432\u0443\u043A\u0438 \u0441\u0440\u0430\u0436\u0435\u043D\u0438\u0439
-    \u0438 \u0437\u0432\u043E\u043D \u0438\u0433\u0440\u043E\u0432\u044B\u0445 \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u043E\u0432.
-    \u0421\u0442\u0440\u0430\u043D\u043D\u044B\u0439 \u0441\u043E\u043D. \u0417\u0430\u0442\u043E
-    \u044F \u043D\u0435\u043F\u043B\u043E\u0445\u043E \u0432\u044B\u0441\u043F\u0430\u043B\u0441\u044F
-    \u0438 \u0447\u0443\u0432\u0441\u0442\u0432\u043E\u0432\u0430\u043B \u0441\u0435\u0431\u044F
-    \u043D\u0430\u043C\u043D\u043E\u0433\u043E \u043B\u0443\u0447\u0448\u0435, \u0430
-    \u0432\u043E \u0432\u0440\u0435\u043C\u044F \u043F\u0435\u0440\u0435\u043A\u043B\u0438\u0447\u043A\u0438
-    \u043D\u0430\u0448\u0435\u043B \u043F\u0430\u0447\u043A\u0443, \u0432 \u043A\u043E\u0442\u043E\u0440\u043E\u0439
-    \u0431\u044B\u043B\u043E 5 \u0441\u0438\u0433\u0430\u0440\u0435\u0442. \u041D\u0435\u043F\u043B\u043E\u0445\u043E\u0435
-    \u043D\u0430\u0447\u0430\u043B\u043E \u0434\u043D\u044F!"
+  description_id: 2523
+  description: 
   continuous: 0
   itemMods: []
   statChange:
   - stat: cash
     event_name: 
-    value: 5
+    value: 3
   - stat: energy
     event_name: 
-    value: 150
+    value: 40
   - stat: health
     event_name: 
-    value: 20
+    value: 15
   - stat: ad_cd
     event_name: 
-    value: 5
+    value: 2
   base_chance: 100
   chance: 0
   modifierList: []
@@ -41110,7 +41405,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: cash
     value: 50
@@ -41292,7 +41586,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - scissors
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -41317,7 +41610,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -41342,7 +41634,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -41528,7 +41819,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -41592,7 +41882,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 10
@@ -41752,7 +42041,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -41777,7 +42065,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -41950,7 +42237,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -42006,7 +42292,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -42137,7 +42422,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -42175,7 +42459,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
@@ -42248,7 +42531,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -42274,7 +42556,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -42454,7 +42735,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -42480,7 +42760,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - vincent_quest
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -42544,7 +42823,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -42689,7 +42967,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -43168,7 +43445,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -43258,7 +43534,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -43307,7 +43582,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -43396,7 +43670,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -43422,7 +43695,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -43448,7 +43720,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - work_access
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
@@ -43529,7 +43800,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -43562,7 +43832,7 @@ MonoBehaviour:
     value: -5
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   - stat: energy
     event_name: 
     value: -40
@@ -43651,7 +43921,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: charisma
     value: 60
@@ -43829,7 +44098,7 @@ MonoBehaviour:
     value: -40
   - stat: guard_rep
     event_name: 
-    value: -20
+    value: -10
   - stat: trigger
     event_name: in_solitary
     value: 1
@@ -43854,7 +44123,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -43929,7 +44197,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -44032,7 +44299,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -44198,7 +44464,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -44223,7 +44488,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -44249,7 +44513,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -44340,7 +44603,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -44388,7 +44650,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: -40
@@ -44434,7 +44695,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -44491,7 +44751,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
@@ -44532,6 +44791,32 @@ MonoBehaviour:
   - {fileID: 114000013361838712}
   - {fileID: 114000010708110416}
   - {fileID: 114000014133304310}
+--- !u!114 &114000011237545114
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011535166070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdba3189e476dd245841b7f400759284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_id: 901
+  text: "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C \u0441\u043E\u043D
+    [\u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0440\u0435\u043A\u043B\u0430\u043C\u043D\u044B\u0439
+    \u0440\u043E\u043B\u0438\u043A]"
+  type: show_ad
+  color: 0
+  time_boost: 0
+  unlockDay: 0
+  requireItem: []
+  requireStat: []
+  requireStory: 
+  statChange: []
+  base_chance: 0
+  chance: 0
+  modifierList: []
 --- !u!114 &114000011239024600
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44815,12 +45100,13 @@ MonoBehaviour:
   time_boost: 360
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
   - name: charisma
     value: -30
+  - name: cash
+    value: 5
   requireStory: 
   statChange:
   - stat: energy
@@ -44829,6 +45115,9 @@ MonoBehaviour:
   - stat: charisma
     event_name: 
     value: 1
+  - stat: cash
+    event_name: 
+    value: -5
   base_chance: 0
   chance: 0
   modifierList: []
@@ -44852,7 +45141,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - chief_quest
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -44901,7 +45189,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -44978,7 +45265,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -45035,7 +45321,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -45108,7 +45393,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -45257,7 +45541,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -45283,7 +45566,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -45377,7 +45659,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -45434,7 +45715,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -45459,7 +45739,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -45573,7 +45852,6 @@ MonoBehaviour:
   time_boost: 180
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: guard_rep
     value: 150
@@ -45674,7 +45952,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -45850,7 +46127,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -45942,7 +46218,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -45991,7 +46266,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -46016,7 +46290,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -46105,7 +46378,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -46130,7 +46402,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -46209,7 +46480,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -46235,7 +46505,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -46314,7 +46583,7 @@ MonoBehaviour:
     value: 1
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   base_chance: 100
   chance: 0
   modifierList: []
@@ -46349,7 +46618,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -46435,7 +46703,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -46457,7 +46724,7 @@ MonoBehaviour:
   description: 
   eventTime:
     start: 0
-    end: 180
+    end: 60
   base_chance: 25
   chance: 0
   modifierList: []
@@ -46706,7 +46973,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 20
@@ -46742,7 +47008,7 @@ MonoBehaviour:
     value: -40
   - stat: guard_rep
     event_name: 
-    value: -20
+    value: -10
   - stat: trigger
     event_name: in_solitary
     value: 1
@@ -46767,7 +47033,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -46792,7 +47057,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -46852,7 +47116,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: cash
     value: 10
@@ -46892,7 +47155,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -46942,7 +47204,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -47019,7 +47280,9 @@ MonoBehaviour:
     \u0432 \u0435\u0433\u043E \u043C\u0435\u0434\u043A\u0430\u0440\u0442\u0443,  \u043F\u043E\u043A\u0430
     \u043E\u0445\u0440\u0430\u043D\u0430 \u043D\u0435 \u0432\u0438\u0434\u0438\u0442."
   continuous: 0
-  itemMods: []
+  itemMods:
+  - mod: 0
+    item: kitchen_den
   statChange:
   - stat: trigger
     event_name: steal_dragon_necke_kitchen
@@ -47115,7 +47378,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -47147,7 +47409,7 @@ MonoBehaviour:
     value: -20
   - stat: guard_rep
     event_name: 
-    value: -2
+    value: -1
   base_chance: 100
   chance: 0
   modifierList: []
@@ -47218,7 +47480,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - screwdriver
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -47243,7 +47504,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -47574,7 +47834,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -47599,7 +47858,6 @@ MonoBehaviour:
   time_boost: 360
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 20
@@ -47626,7 +47884,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -47651,7 +47908,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -47676,7 +47932,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -47701,7 +47956,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -47739,7 +47993,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -47765,7 +48018,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -47947,7 +48199,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -47972,7 +48223,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -48011,7 +48261,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - michael_quest
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -48087,7 +48336,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -48126,7 +48374,7 @@ MonoBehaviour:
   eventTime:
     start: 0
     end: 0
-  base_chance: 0
+  base_chance: 25
   chance: 0
   modifierList:
   - stat: character
@@ -48268,7 +48516,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -48534,7 +48781,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -48639,25 +48885,24 @@ MonoBehaviour:
   time_boost: 360
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
-    value: 40
-  - name: body
     value: 60
+  - name: body
+    value: 59
   - name: cash
-    value: 5
+    value: 20
   requireStory: 
   statChange:
   - stat: energy
     event_name: 
-    value: -40
+    value: -60
   - stat: body
     event_name: 
     value: 1
   - stat: cash
     event_name: 
-    value: -5
+    value: -20
   base_chance: 0
   chance: 0
   modifierList: []
@@ -48822,7 +49067,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -48847,7 +49091,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -48917,7 +49160,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -48984,28 +49226,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94438afb1b9bb7c46a69a8aef43e2dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description_id: 900
-  description: "\u041C\u043D\u0435 \u0441\u043D\u0438\u0442\u044C\u0441\u044F \u043A\u0430\u043A\u043E\u0439-\u0442\u043E
-    \u0441\u0442\u0440\u0430\u043D\u043D\u044B\u0439 \u0441\u043E\u043D. \u0412 \u043D\u0435\u043C
-    \u044F \u043D\u0430 \u0441\u0432\u043E\u0431\u043E\u0434\u0435, \u0443 \u0441\u0435\u0431\u044F
-    \u0434\u043E\u043C\u0430, \u0432 \u0441\u0432\u043E\u0435\u0439 \u043F\u043E\u0441\u0442\u0435\u043B\u0438,
-    \u0430 \u043D\u0435 \u043D\u0430 \u0442\u044E\u0440\u0435\u043C\u043D\u044B\u0445
-    \u043D\u0430\u0440\u0430\u0445. \u0414\u043E\u043C. \u042F \u0441\u043B\u044B\u0448\u0443
-    \u0437\u0432\u043E\u043D\u043E\u043A \u0432 \u0434\u0432\u0435\u0440\u044C. \u042F
-    \u0432\u0441\u0442\u0430\u044E \u0441 \u043A\u0440\u043E\u0432\u0430\u0442\u0438
-    \u0438 \u0438\u0434\u0443 \u0432 \u043F\u0440\u0438\u0445\u043E\u0436\u0443\u044E.
-    \u201C\u041A\u0442\u043E \u0442\u0430\u043C?\u201D - \u044F \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u044E
-    \u0434\u0432\u0435\u0440\u044C, \u0434\u0430\u0436\u0435 \u043D\u0435 \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0432
-    \u0432 \u0433\u043B\u0430\u0437\u043E\u043A \u0438 \u0432 \u0433\u043B\u0430\u0437\u0430
-    \u043C\u043D\u0435 \u0431\u044C\u0435\u0442 \u043E\u0441\u043B\u0435\u043F\u0438\u0442\u0435\u043B\u044C\u043D\u0430\u044F
-    \u0432\u0441\u043F\u044B\u0448\u043A\u0430 \u0441\u0432\u0435\u0442\u0430."
+  description_id: 2522
+  description: 
   eventTime:
     start: 0
-    end: 360
+    end: 120
   base_chance: 0
   chance: 0
   modifierList:
-  - stat: advertisement_timer
+  - stat: advertisement_timer_rest
     event_name: 
     value: 0
 --- !u!114 &114000011815577658
@@ -49027,7 +49256,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: mind
     value: 60
@@ -49115,7 +49343,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -49262,7 +49489,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -49468,7 +49694,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -49518,7 +49743,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -49543,7 +49767,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -49568,7 +49791,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -49624,7 +49846,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - wad_of_putty
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -49649,7 +49870,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -49758,7 +49978,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -49784,7 +50003,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -50016,7 +50234,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -50042,7 +50259,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -50136,25 +50352,24 @@ MonoBehaviour:
   time_boost: 360
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
-    value: 40
+    value: 60
   - name: mind
     value: 60
   - name: cash
-    value: 5
+    value: 20
   requireStory: 
   statChange:
   - stat: energy
     event_name: 
-    value: -40
+    value: -60
   - stat: mind
     event_name: 
     value: 1
   - stat: cash
     event_name: 
-    value: -5
+    value: -20
   base_chance: 0
   chance: 0
   modifierList: []
@@ -50337,7 +50552,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -50384,7 +50598,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -50409,7 +50622,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -50499,7 +50711,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -50524,7 +50735,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 20
@@ -50654,7 +50864,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -50885,7 +51094,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -50975,7 +51183,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -51000,7 +51207,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -51085,7 +51291,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -51132,7 +51337,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
@@ -51208,7 +51412,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - oscar_quest
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -51343,7 +51546,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -51368,7 +51570,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -51450,7 +51651,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -51497,7 +51697,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -51539,6 +51738,30 @@ MonoBehaviour:
   - stat: trigger
     event_name: vincent_bonus
     value: 1
+--- !u!114 &114000012118209852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013619312126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdba3189e476dd245841b7f400759284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_id: 902
+  text: "\u041F\u0440\u043E\u0441\u043D\u0443\u0442\u044C\u0441\u044F"
+  type: skip
+  color: 0
+  time_boost: 0
+  unlockDay: 0
+  requireItem: []
+  requireStat: []
+  requireStory: 
+  statChange: []
+  base_chance: 0
+  chance: 0
+  modifierList: []
 --- !u!114 &114000012120770426
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51570,7 +51793,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: cash
     value: 50
@@ -51730,7 +51952,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -51855,7 +52076,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -52381,7 +52601,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: inmate_rep
     value: 50
@@ -52560,7 +52779,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -52636,7 +52854,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -52829,7 +53046,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -52855,7 +53071,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -52906,7 +53121,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -53000,7 +53214,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -53025,7 +53238,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -53051,7 +53263,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -53076,7 +53287,6 @@ MonoBehaviour:
   time_boost: 360
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 0
@@ -53151,7 +53361,7 @@ MonoBehaviour:
     value: 1
   - stat: cash
     event_name: 
-    value: 5
+    value: 2
   base_chance: 100
   chance: 0
   modifierList: []
@@ -53196,7 +53406,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -53243,12 +53452,11 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
   - name: body
-    value: 60
+    value: 80
   - name: guard_rep
     value: 60
   requireStory: 
@@ -53284,7 +53492,7 @@ MonoBehaviour:
   statChange:
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   - stat: trigger
     event_name: ambush_rumor_spread
     value: 0
@@ -53409,7 +53617,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -53482,10 +53689,9 @@ MonoBehaviour:
   time_boost: 90
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
-    value: 10
+    value: 20
   requireStory: 
   statChange:
   - stat: stat_bonus
@@ -53496,7 +53702,7 @@ MonoBehaviour:
     value: 2
   - stat: energy
     event_name: 
-    value: -10
+    value: -20
   base_chance: 0
   chance: 0
   modifierList: []
@@ -53575,7 +53781,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -53632,7 +53837,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -53671,7 +53875,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -53729,7 +53932,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: guard_rep
     value: 50
@@ -53793,7 +53995,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
@@ -53954,7 +54155,7 @@ MonoBehaviour:
     value: 0
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   base_chance: 100
   chance: 0
   modifierList: []
@@ -54079,7 +54280,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -54144,7 +54344,7 @@ MonoBehaviour:
   eventTime:
     start: 0
     end: 0
-  base_chance: 20
+  base_chance: 40
   chance: 0
   modifierList:
   - stat: character
@@ -54289,7 +54489,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
@@ -54333,7 +54532,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -54518,7 +54716,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -54543,7 +54740,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
@@ -54593,7 +54789,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
@@ -54648,7 +54843,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -54762,7 +54956,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -54914,7 +55107,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - duct_tape
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -54970,7 +55162,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -55026,7 +55217,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - drugs
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange:
@@ -55080,6 +55270,41 @@ MonoBehaviour:
   base_chance: 100
   chance: 0
   modifierList: []
+--- !u!114 &114000012563594490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010213996098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94438afb1b9bb7c46a69a8aef43e2dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description_id: 900
+  description: "\u041C\u043D\u0435 \u0441\u043D\u0438\u0442\u044C\u0441\u044F \u043A\u0430\u043A\u043E\u0439-\u0442\u043E
+    \u0441\u0442\u0440\u0430\u043D\u043D\u044B\u0439 \u0441\u043E\u043D. \u0412 \u043D\u0435\u043C
+    \u044F \u043D\u0430 \u0441\u0432\u043E\u0431\u043E\u0434\u0435, \u0443 \u0441\u0435\u0431\u044F
+    \u0434\u043E\u043C\u0430, \u0432 \u0441\u0432\u043E\u0435\u0439 \u043F\u043E\u0441\u0442\u0435\u043B\u0438,
+    \u0430 \u043D\u0435 \u043D\u0430 \u0442\u044E\u0440\u0435\u043C\u043D\u044B\u0445
+    \u043D\u0430\u0440\u0430\u0445. \u0414\u043E\u043C. \u042F \u0441\u043B\u044B\u0448\u0443
+    \u0437\u0432\u043E\u043D\u043E\u043A \u0432 \u0434\u0432\u0435\u0440\u044C. \u042F
+    \u0432\u0441\u0442\u0430\u044E \u0441 \u043A\u0440\u043E\u0432\u0430\u0442\u0438
+    \u0438 \u0438\u0434\u0443 \u0432 \u043F\u0440\u0438\u0445\u043E\u0436\u0443\u044E.
+    \u201C\u041A\u0442\u043E \u0442\u0430\u043C?\u201D - \u044F \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u044E
+    \u0434\u0432\u0435\u0440\u044C, \u0434\u0430\u0436\u0435 \u043D\u0435 \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0432
+    \u0432 \u0433\u043B\u0430\u0437\u043E\u043A \u0438 \u0432 \u0433\u043B\u0430\u0437\u0430
+    \u043C\u043D\u0435 \u0431\u044C\u0435\u0442 \u043E\u0441\u043B\u0435\u043F\u0438\u0442\u0435\u043B\u044C\u043D\u0430\u044F
+    \u0432\u0441\u043F\u044B\u0448\u043A\u0430 \u0441\u0432\u0435\u0442\u0430."
+  eventTime:
+    start: 0
+    end: 360
+  base_chance: 0
+  chance: 0
+  modifierList:
+  - stat: advertisement_timer
+    event_name: 
+    value: 0
 --- !u!114 &114000012564595284
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -55098,7 +55323,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -55124,7 +55348,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -55396,7 +55619,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -55477,16 +55699,15 @@ MonoBehaviour:
   time_boost: 360
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
-    value: 40
+    value: 50
   - name: mind
     value: 30
   - name: mind
     value: -60
   - name: cash
-    value: 1
+    value: 10
   requireStory: 
   statChange:
   - stat: mind
@@ -55494,10 +55715,10 @@ MonoBehaviour:
     value: 1
   - stat: cash
     event_name: 
-    value: -1
+    value: -10
   - stat: energy
     event_name: 
-    value: -40
+    value: -50
   base_chance: 0
   chance: 0
   modifierList: []
@@ -55829,19 +56050,19 @@ MonoBehaviour:
   - event_name: canteen_burn
     status: 1
     globalChance: 50
-    cdDay: 39
+    cdDay: 30
   - event_name: sudden_shakedown
     status: 1
     globalChance: 100
-    cdDay: 52
+    cdDay: 50
   - event_name: financial_issues
     status: 1
     globalChance: 50
-    cdDay: 48
+    cdDay: 100
   - event_name: friendly_guards
     status: 0
     globalChance: 50
-    cdDay: 28
+    cdDay: 30
   - event_name: tribute
     status: 0
     globalChance: 100
@@ -55931,16 +56152,15 @@ MonoBehaviour:
   time_boost: 360
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
-    value: 40
+    value: 50
   - name: body
-    value: 30
+    value: 29
   - name: body
-    value: -60
+    value: -59
   - name: cash
-    value: 1
+    value: 10
   requireStory: 
   statChange:
   - stat: body
@@ -55948,10 +56168,10 @@ MonoBehaviour:
     value: 1
   - stat: cash
     event_name: 
-    value: -1
+    value: -10
   - stat: energy
     event_name: 
-    value: -40
+    value: -50
   base_chance: 0
   chance: 0
   modifierList: []
@@ -56048,7 +56268,7 @@ MonoBehaviour:
     value: -40
   - stat: cash
     event_name: 
-    value: 5
+    value: 3
   - stat: work
     event_name: mind
     value: 5
@@ -56120,7 +56340,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -56145,7 +56364,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -56176,19 +56394,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdba3189e476dd245841b7f400759284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_id: 901
-  text: "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C \u0441\u043E\u043D
-    [\u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0440\u0435\u043A\u043B\u0430\u043C\u043D\u044B\u0439
-    \u0440\u043E\u043B\u0438\u043A]"
-  type: show_ad
+  text_id: 2521
+  text: 
+  type: show_ad_rest
   color: 0
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
-  requireStat: []
+  requireStat:
+  - name: energy
+    value: 0
+  - name: health
+    value: 0
   requireStory: 
-  statChange: []
+  statChange:
+  - stat: energy
+    event_name: 
+    value: 40
+  - stat: cash
+    event_name: 
+    value: 5
   base_chance: 0
   chance: 0
   modifierList: []
@@ -56210,7 +56435,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -56235,7 +56459,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 20
@@ -56296,27 +56519,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c554afecaad1224c86ebc3412474fc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description_id: 903
-  description: "\u042F \u043F\u0440\u043E\u0441\u043D\u0443\u043B\u0441\u044F, \u0442\u0430\u043A
-    \u0438 \u043D\u0435 \u0443\u0437\u043D\u0430\u0432, \u0447\u0435\u043C \u0437\u0430\u043A\u043E\u043D\u0447\u0438\u043B\u0441\u044F
-    \u0441\u043E\u043D. \u041D\u0430 \u0434\u0443\u0448\u0435 \u0431\u044B\u043B\u043E
-    \u0442\u043E\u0441\u043A\u043B\u0438\u0432\u043E, \u043A\u0430\u043A \u0431\u0443\u0434\u0442\u043E
-    \u044F \u0443\u043F\u0443\u0441\u0442\u0438\u043B \u0447\u0442\u043E-\u0442\u043E
-    \u0432\u0430\u0436\u043D\u043E\u0435. \u0412\u043F\u0435\u0440\u0435\u0434\u0438
-    \u043E\u0447\u0435\u0440\u0435\u0434\u043D\u043E\u0439 \u0434\u0435\u043D\u044C
-    \u0432 \u044D\u0442\u043E\u0439 \u0430\u0434\u0441\u043A\u043E\u0439 \u0434\u044B\u0440\u0435."
+  description_id: 716
+  description: 
   continuous: 0
   itemMods: []
   statChange:
   - stat: energy
     event_name: 
-    value: 150
-  - stat: health
+    value: 30
+  - stat: cash
     event_name: 
-    value: 5
+    value: -3
   - stat: ad_cd
     event_name: 
-    value: 5
+    value: 2
   base_chance: 100
   chance: 0
   modifierList: []
@@ -56335,7 +56551,7 @@ MonoBehaviour:
   description: 
   eventTime:
     start: 0
-    end: 360
+    end: 60
   base_chance: 999
   chance: 0
   modifierList: []
@@ -56397,7 +56613,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: cash
     value: 10
@@ -56424,7 +56639,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -56490,7 +56704,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - plastic_fork
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -56515,7 +56728,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -56600,7 +56812,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -56666,7 +56877,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -56768,7 +56978,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -56793,7 +57002,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -56845,7 +57053,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -56923,7 +57130,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -56979,7 +57185,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -57038,7 +57243,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -57064,7 +57268,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -57196,7 +57399,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -57222,7 +57424,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
@@ -57249,7 +57450,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 10
@@ -57276,7 +57476,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -57332,7 +57531,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -57405,15 +57603,14 @@ MonoBehaviour:
   time_boost: 90
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
-    value: 10
+    value: 20
   requireStory: 
   statChange:
   - stat: energy
     event_name: 
-    value: -10
+    value: -20
   - stat: stat_bonus
     event_name: inmate_rep
     value: 2
@@ -57597,7 +57794,7 @@ MonoBehaviour:
     value: 1
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   base_chance: 100
   chance: 0
   modifierList: []
@@ -57619,7 +57816,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -57719,7 +57915,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 10
@@ -57746,7 +57941,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
@@ -57972,6 +58166,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   randomEventList:
   - {fileID: 114000010150084980}
+--- !u!114 &114000012930260270
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012277981794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c554afecaad1224c86ebc3412474fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description_id: 2224
+  description: 
+  continuous: 0
+  itemMods:
+  - mod: 0
+    item: crowbar
+  statChange:
+  - stat: energy
+    event_name: 
+    value: -40
+  - stat: body
+    event_name: 
+    value: 1
+  - stat: cash
+    event_name: 
+    value: -5
+  base_chance: 100
+  chance: 0
+  modifierList: []
 --- !u!114 &114000012931831788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -58018,7 +58242,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -58056,7 +58279,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -58169,6 +58391,25 @@ MonoBehaviour:
   base_chance: 100
   chance: 0
   modifierList: []
+--- !u!114 &114000012960672960
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012482914736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94438afb1b9bb7c46a69a8aef43e2dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description_id: 0
+  description: 
+  eventTime:
+    start: 0
+    end: 360
+  base_chance: 999
+  chance: 0
+  modifierList: []
 --- !u!114 &114000012961628752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -58187,7 +58428,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: cash
     value: 10
@@ -58268,7 +58508,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -58294,13 +58533,13 @@ MonoBehaviour:
   StartEventList:
   - {fileID: 1000012124327874}
   AdvertisementEventList:
-  - {fileID: 1000010091000842}
+  - {fileID: 1000012482914736}
   dailyRewardList:
   - day: FirstPlayThrough
     rewardList:
     - stat: cash
       event_name: 
-      value: 15
+      value: 3
     - stat: charpoints
       event_name: 
       value: 10
@@ -58308,7 +58547,7 @@ MonoBehaviour:
     rewardList:
     - stat: cash
       event_name: 
-      value: 10
+      value: 3
   - day: Day2
     rewardList:
     - stat: cash
@@ -58418,7 +58657,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -58475,7 +58713,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -58511,6 +58748,19 @@ MonoBehaviour:
   base_chance: 100
   chance: 0
   modifierList: []
+--- !u!114 &114000012993072806
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012544278984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47641aa874951c945b7bbcbf472c3fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomEventList:
+  - {fileID: 114000013430630064}
 --- !u!114 &114000012994245426
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -58642,7 +58892,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -58701,7 +58950,7 @@ MonoBehaviour:
   eventTime:
     start: 0
     end: 0
-  base_chance: 20
+  base_chance: 50
   chance: 0
   modifierList:
   - stat: character
@@ -58728,7 +58977,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -58810,7 +59058,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -58872,7 +59119,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -59034,7 +59280,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -59117,7 +59362,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -59144,7 +59388,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -59169,7 +59412,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -59399,7 +59641,7 @@ MonoBehaviour:
     value: 1
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   base_chance: 100
   chance: 0
   modifierList: []
@@ -59534,13 +59776,31 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: cash
     value: 5
   requireStory: 
   statChange: []
   base_chance: 0
+  chance: 0
+  modifierList: []
+--- !u!114 &114000013103880778
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011035763562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94438afb1b9bb7c46a69a8aef43e2dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description_id: 2381
+  description: 
+  eventTime:
+    start: 0
+    end: 0
+  base_chance: 100
   chance: 0
   modifierList: []
 --- !u!114 &114000013104144540
@@ -59609,7 +59869,7 @@ MonoBehaviour:
   statChange:
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   - stat: trigger
     event_name: ambush_rumor_spread
     value: 0
@@ -59760,6 +60020,41 @@ MonoBehaviour:
   - stat: mind
     event_name: 
     value: 0.75
+--- !u!114 &114000013134961130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012580152552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c554afecaad1224c86ebc3412474fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description_id: 903
+  description: "\u042F \u043F\u0440\u043E\u0441\u043D\u0443\u043B\u0441\u044F, \u0442\u0430\u043A
+    \u0438 \u043D\u0435 \u0443\u0437\u043D\u0430\u0432, \u0447\u0435\u043C \u0437\u0430\u043A\u043E\u043D\u0447\u0438\u043B\u0441\u044F
+    \u0441\u043E\u043D. \u041D\u0430 \u0434\u0443\u0448\u0435 \u0431\u044B\u043B\u043E
+    \u0442\u043E\u0441\u043A\u043B\u0438\u0432\u043E, \u043A\u0430\u043A \u0431\u0443\u0434\u0442\u043E
+    \u044F \u0443\u043F\u0443\u0441\u0442\u0438\u043B \u0447\u0442\u043E-\u0442\u043E
+    \u0432\u0430\u0436\u043D\u043E\u0435. \u0412\u043F\u0435\u0440\u0435\u0434\u0438
+    \u043E\u0447\u0435\u0440\u0435\u0434\u043D\u043E\u0439 \u0434\u0435\u043D\u044C
+    \u0432 \u044D\u0442\u043E\u0439 \u0430\u0434\u0441\u043A\u043E\u0439 \u0434\u044B\u0440\u0435."
+  continuous: 0
+  itemMods: []
+  statChange:
+  - stat: energy
+    event_name: 
+    value: 150
+  - stat: health
+    event_name: 
+    value: 5
+  - stat: ad_cd
+    event_name: 
+    value: 5
+  base_chance: 100
+  chance: 0
+  modifierList: []
 --- !u!114 &114000013140608812
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -59874,7 +60169,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -59897,7 +60191,7 @@ MonoBehaviour:
   eventTime:
     start: 0
     end: 0
-  base_chance: 10
+  base_chance: 20
   chance: 0
   modifierList:
   - stat: character
@@ -59970,7 +60264,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -59995,7 +60288,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -60076,7 +60368,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -60161,7 +60452,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -60238,7 +60528,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: cash
     value: 5
@@ -60322,7 +60611,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -60347,7 +60635,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -60404,7 +60691,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -60460,7 +60746,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -60496,7 +60781,7 @@ MonoBehaviour:
     value: -40
   - stat: cash
     event_name: 
-    value: 5
+    value: 3
   - stat: work
     event_name: body
     value: 5
@@ -60522,12 +60807,15 @@ MonoBehaviour:
   time_boost: 360
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
   - name: body
-    value: -30
+    value: 20
+  - name: body
+    value: -29
+  - name: cash
+    value: 5
   requireStory: 
   statChange:
   - stat: energy
@@ -60536,6 +60824,9 @@ MonoBehaviour:
   - stat: body
     event_name: 
     value: 1
+  - stat: cash
+    event_name: 
+    value: -5
   base_chance: 0
   chance: 0
   modifierList: []
@@ -60722,7 +61013,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: cash
     value: 50
@@ -60888,7 +61178,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -60978,7 +61267,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: cash
     value: 5
@@ -61134,7 +61422,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -61467,7 +61754,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -61566,7 +61852,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -61591,7 +61876,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -61632,7 +61916,7 @@ MonoBehaviour:
   eventTime:
     start: 0
     end: 0
-  base_chance: 20
+  base_chance: 110
   chance: 0
   modifierList:
   - stat: character
@@ -61665,7 +61949,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -61713,7 +61996,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -61751,7 +62033,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -61809,7 +62090,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -61834,7 +62114,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -61872,7 +62151,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -61896,7 +62174,7 @@ MonoBehaviour:
     \u043A\u043E\u043F\u0435\u0439\u043A\u0438. \u041E\u0447\u0435\u043D\u044C \u043C\u0430\u043B\u043E.
     \u041C\u044B \u0441 \u043F\u0430\u0446\u0430\u043D\u0430\u043C\u0438 \u0434\u0430\u0436\u0435
     \u0441\u043B\u0435\u0433\u043A\u0430 \u043F\u0440\u0438\u0443\u043D\u044B\u043B\u0438."
-  continuous: 0
+  continuous: 1
   itemMods: []
   statChange:
   - stat: work
@@ -61930,7 +62208,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - plastic_shiv
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -62021,7 +62298,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -62107,7 +62383,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: -10
@@ -62136,7 +62411,7 @@ MonoBehaviour:
   - {fileID: 114000013620801462}
   - {fileID: 114000011277716076}
   - {fileID: 114000012204398944}
-  - {fileID: 114000011809826798}
+  - {fileID: 114000012563594490}
 --- !u!114 &114000013444371618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -62168,7 +62443,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -62206,13 +62480,24 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
   base_chance: 0
   chance: 0
   modifierList: []
+--- !u!114 &114000013453884832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011535166070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cde791f298ac6c47a95e2824e0580fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  advertisementEvent: {fileID: 114000012960672960}
 --- !u!114 &114000013455178878
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -62231,7 +62516,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -62316,7 +62600,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -62371,7 +62654,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -62417,7 +62699,7 @@ MonoBehaviour:
     value: -5
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   - stat: energy
     event_name: 
     value: -40
@@ -62442,7 +62724,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -62468,7 +62749,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: guard_rep
     value: 130
@@ -62512,6 +62792,30 @@ MonoBehaviour:
   - stat: guard_rep
     event_name: 
     value: 1
+--- !u!114 &114000013473449630
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012544278984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdba3189e476dd245841b7f400759284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_id: 32
+  text: 
+  type: skip
+  color: 0
+  time_boost: 0
+  unlockDay: 0
+  requireItem: []
+  requireStat: []
+  requireStory: 
+  statChange: []
+  base_chance: 0
+  chance: 0
+  modifierList: []
 --- !u!114 &114000013477478242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -62612,7 +62916,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -62678,7 +62981,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - ambush_rumor_spread
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -62734,7 +63036,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -62791,7 +63092,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -62888,7 +63188,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -62952,22 +63251,22 @@ MonoBehaviour:
   statChange:
   - stat: body
     event_name: 
-    value: -3
+    value: -35
   - stat: charisma
     event_name: 
-    value: -3
+    value: -10
   - stat: mind
     event_name: 
-    value: -3
+    value: -15
   - stat: energy
     event_name: 
-    value: -80
+    value: -90
   - stat: trigger
     event_name: in_solitary
     value: 0
   - stat: hygiene
     event_name: 
-    value: -75
+    value: -90
   base_chance: 100
   chance: 0
   modifierList: []
@@ -63054,7 +63353,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -63102,7 +63400,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - lighter
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -63373,7 +63670,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 3
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -63398,7 +63694,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -63424,20 +63719,19 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - canteen_access
-  requireWeapon: []
   requireStat:
   - name: energy
-    value: 20
+    value: 30
   - name: health
     value: 0
   requireStory: 
   statChange:
   - stat: health
     event_name: 
-    value: 20
+    value: 10
   - stat: energy
     event_name: 
-    value: -20
+    value: -30
   base_chance: 0
   chance: 0
   modifierList: []
@@ -63481,7 +63775,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -63506,7 +63799,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -63614,7 +63906,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -63640,7 +63931,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -63665,7 +63955,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 40
@@ -63766,7 +64055,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -63841,7 +64129,7 @@ MonoBehaviour:
     value: 1
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   base_chance: 100
   chance: 0
   modifierList: []
@@ -64018,7 +64306,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -64141,7 +64428,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -64355,7 +64641,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -64378,7 +64663,7 @@ MonoBehaviour:
   eventTime:
     start: 0
     end: 0
-  base_chance: 10
+  base_chance: 15
   chance: 0
   modifierList:
   - stat: story
@@ -64442,7 +64727,6 @@ MonoBehaviour:
   unlockDay: 0
   requireItem:
   - old_jim_quest
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -64520,7 +64804,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -64745,7 +65028,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -64870,7 +65152,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -64895,7 +65176,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -65083,7 +65363,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -65434,7 +65713,7 @@ MonoBehaviour:
     value: 6
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   - stat: energy
     event_name: 
     value: -40
@@ -65588,7 +65867,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -65697,7 +65975,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -65744,7 +66021,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -65810,7 +66086,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -65859,7 +66134,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -65884,7 +66158,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: cash
     value: 1
@@ -65913,7 +66186,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 20
@@ -66014,7 +66286,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -66166,7 +66437,9 @@ MonoBehaviour:
     \u043A\u0430\u0437\u0430\u043B\u043E\u0441\u044C, \u0447\u0442\u043E \u0432\u0441\u0435
     \u043D\u0435 \u0442\u0430\u043A \u0443\u0436 \u043F\u043B\u043E\u0445\u043E."
   continuous: 0
-  itemMods: []
+  itemMods:
+  - mod: 1
+    item: drugs
   statChange:
   - stat: trigger
     event_name: drug_addict_event
@@ -66193,7 +66466,7 @@ MonoBehaviour:
   eventTime:
     start: 0
     end: 0
-  base_chance: 10
+  base_chance: 20
   chance: 0
   modifierList:
   - stat: character
@@ -66233,7 +66506,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -66281,7 +66553,6 @@ MonoBehaviour:
   time_boost: 360
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -66306,7 +66577,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -66344,7 +66614,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -66383,7 +66652,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -66447,7 +66715,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -66493,6 +66760,18 @@ MonoBehaviour:
   - stat: trigger
     event_name: good_cooking
     value: 1
+--- !u!114 &114000014026219470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013321934980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cde791f298ac6c47a95e2824e0580fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  advertisementEvent: {fileID: 114000012732871456}
 --- !u!114 &114000014029940620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -66511,7 +66790,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -66599,7 +66877,7 @@ MonoBehaviour:
     value: -5
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   - stat: energy
     event_name: 
     value: -40
@@ -66707,7 +66985,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -66733,7 +67010,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -66817,7 +67093,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -66842,7 +67117,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -66933,7 +67207,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 20
@@ -67047,7 +67320,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: -40
@@ -67074,7 +67346,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -67297,7 +67568,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -67350,7 +67620,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -67600,7 +67869,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -67625,7 +67893,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat:
   - name: energy
     value: 20
@@ -67654,7 +67921,7 @@ MonoBehaviour:
   eventTime:
     start: 0
     end: 0
-  base_chance: 10
+  base_chance: 20
   chance: 0
   modifierList:
   - stat: character
@@ -67685,7 +67952,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -67748,7 +68014,7 @@ MonoBehaviour:
     value: 1
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   base_chance: 100
   chance: 0
   modifierList: []
@@ -68011,7 +68277,7 @@ MonoBehaviour:
     value: 1
   - stat: mind
     event_name: 
-    value: -2
+    value: -1
   base_chance: 100
   chance: 0
   modifierList: []
@@ -68201,7 +68467,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -68275,7 +68540,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -68328,7 +68592,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -68497,7 +68760,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -68553,7 +68815,6 @@ MonoBehaviour:
   time_boost: 0
   unlockDay: 0
   requireItem: []
-  requireWeapon: []
   requireStat: []
   requireStory: 
   statChange: []
@@ -68576,7 +68837,7 @@ MonoBehaviour:
   eventTime:
     start: 0
     end: 0
-  base_chance: 10
+  base_chance: 20
   chance: 0
   modifierList:
   - stat: character

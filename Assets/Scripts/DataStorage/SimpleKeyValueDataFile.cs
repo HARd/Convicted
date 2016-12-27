@@ -12,6 +12,7 @@ using System.Collections.Generic;
 
 using System;
 using System.IO;
+using System.Linq;
 
 public class SimpleKeyValueDataFile
 {
@@ -68,8 +69,8 @@ public class SimpleKeyValueDataFile
 		string value = m.Groups[2].Value;
 
 		//remove quotes if any
-		if (value[0] == '"' && value[value.Length - 1] == '"')
-			value = value.Substring(1, value.Length - 2);
+//		if (value[0] == '"' && value[value.Length - 1] == '"')
+//			value = value.Substring(1, value.Length - 2);
 
 		//convert supported escaped characters
 		value = value.Replace("\\n", "\n");
@@ -89,6 +90,14 @@ public class SimpleKeyValueDataFile
 		return HasString(key) ? strings[key] : defaultValue;
 	}
 
+	public virtual void SetString(string key, string value)
+	{
+		if (HasString(key))
+			Debug.LogWarningFormat("{0}: key {1} already exists. Replacing old value.", GetType().Name, key);
+		
+		strings[key] = value;
+	}
+
 	public virtual int Count { get { return strings.Count; } }
 
 	public bool HasString(string key)
@@ -102,5 +111,31 @@ public class SimpleKeyValueDataFile
 	public List<string> GetKeysInReadingOrder()
 	{
 		return keysInReadingOrder;
+	}
+
+	public int GetNextKey()
+	{
+		List<int> keys = new List<int>();
+		foreach(string str in strings.Keys)
+		{
+			int res = 0;
+			if(Int32.TryParse(str, out res))
+				keys.Add(res);
+		}
+		return keys.Max() + 1;
+	}
+
+	public void SaveFromStreamingAsset(string name)
+	{
+		Debug.Log(name);
+		StreamWriter sr = File.CreateText(name);
+		foreach(var str in strings)
+		{
+			string value = str.Value;
+			value = value.Replace("\n", "\\n");
+			//value = value.Replace("\"", "\\\"");
+			sr.WriteLine (str.Key + " =  " + value);
+		}
+		sr.Close();
 	}
 }
